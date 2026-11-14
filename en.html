@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Demi-Human World</title>
+<meta name="description" content="A guide to the world of demi-humans: history, laws, society, the Ark, characters, Miami and bots.">
+<link rel="icon" href="img/rabbits.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem("demi-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <button class="brand" data-go="home" aria-label="Home">
+      <span class="rb" aria-hidden="true"></span>
+      <span><b>DEMI WORLD</b><small>by vaileriii</small></span>
+    </button>
+    <div class="toggles">
+      <button class="tbtn" id="spBtn" aria-pressed="false" title="Show or hide all spoilers">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>Spoilers hidden</span>
+      </button>
+      <button class="tbtn" id="langBtn" aria-label="Переключить на русский" title="Русская версия"><b>RU</b></button>
+      <button class="tbtn" id="themeBtn" aria-label="Switch theme">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></svg>
+        <span id="themeLabel">Theme</span>
+      </button>
+    </div>
+  </div>
+  <nav class="tabs" role="tablist" aria-label="Guide sections">
+    <button class="tab" role="tab" data-go="home"><i>00</i>Home</button>
+    <button class="tab" role="tab" data-go="basics"><i>01</i>Nature</button>
+    <button class="tab" role="tab" data-go="history"><i>02</i>History</button>
+    <button class="tab" role="tab" data-go="laws"><i>03</i>Laws</button>
+    <button class="tab" role="tab" data-go="society"><i>04</i>Society</button>
+    <button class="tab" role="tab" data-go="species"><i>05</i>Species</button>
+    <button class="tab" role="tab" data-go="ark"><i>06</i>The Ark</button>
+    <button class="tab" role="tab" data-go="people"><i>07</i>Characters</button>
+    <button class="tab" role="tab" data-go="miami"><i>08</i>Miami</button>
+    <button class="tab" role="tab" data-go="bots"><i>09</i>Bots</button>
+  </nav>
+</header>
+
+<main>
+
+<!-- =============== 00 HOME =============== -->
+<div class="view" id="v-home">
+  <div class="banner hero br">
+    <img src="img/hero.jpg" alt="">
+    <div class="meta mono"><span>FILE 00 / INDEX</span><span>Felis · Lepus · Corvus · Canis</span></div>
+    <div class="title">
+      <span class="mono">A guide to the setting</span>
+      <h1>The Demi-Human World</h1>
+      <p class="lead">For centuries, demis hid in the forests. Today they live in cities, go to work and stand in line for paperwork, yet to most people they are still just "clever pets".</p>
+    </div>
+    <span class="rb" aria-hidden="true"></span>
+  </div>
+
+  <div class="readouts">
+    <div class="ro"><span class="mono">Population</span><b>1 : 5000</b><span>one demi for every five thousand humans</span></div>
+    <div class="ro"><span class="mono">Shifting</span><b>≥ 4 h</b><span>minimum time between two shifts</span></div>
+    <div class="ro"><span class="mono">Demi + human</span><b>63 / 37 %</b><span>chance of a demi / human child</span></div>
+    <div class="ro"><span class="mono">FBDA records</span><b>2 + chip</b><span>extra documents and an implanted chip for every demi</span></div>
+  </div>
+
+  <div class="author br">
+    <span class="rb" aria-hidden="true"></span>
+    <div class="a-tx"><span class="mono k">Creator of the setting and bots</span><b>vaileriii</b><p class="muted">All the bots of this world and other characters are on the Janitor AI profile.</p></div>
+    <a class="btn pri" data-profile href="#" target="_blank" rel="noopener">Janitor AI profile ↗</a>
+  </div>
+
+  <section class="block">
+    <div class="sh"><span class="num">§ 00.1</span><h2>The world in brief</h2></div>
+    <div class="grid g3">
+      <div class="card hl"><div class="tag"><span class="mono k">Mind</span><span class="mono">01</span></div><p>Psychologically, demis are no different from humans: human thinking, empathy, imagination. Animal instincts have almost vanished and survive only in a few closed communities.</p></div>
+      <div class="card hl"><div class="tag"><span class="mono k">Two forms</span><span class="mono">02</span></div><p>A demi can be a human or an animal and shifts at will, but no more than once every four hours and only with focus. Their natural form is human.</p></div>
+      <div class="card hl"><div class="tag"><span class="mono k">Appearance</span><span class="mono">03</span></div><p>The animal form is indistinguishable from an ordinary animal. In human form a demi keeps 2–3 animal features and 1–2 slightly heightened abilities of their species.</p></div>
+      <div class="card hl"><div class="tag"><span class="mono k">Growth</span><span class="mono">04</span></div><p>The body ages at the pace of the current form, and that affects both forms. A year as a cat turns a demi into a teenager; ten years, into someone 55–60 years old.</p></div>
+      <div class="card hl"><div class="tag"><span class="mono k">Offspring</span><span class="mono">05</span></div><p>Children are only possible between demis of the same species or between a demi and a human. They are born in human form and start shifting at 3–5.</p></div>
+      <div class="card hl"><div class="tag"><span class="mono k">Today</span><span class="mono">06</span></div><p>On paper, demis are almost equal to humans, but they carry extra documents and a chip. The underground demi trade thrives, and demis stick together.</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="sh"><span class="num">§ 00.2</span><h2>Archive sections</h2></div>
+    <div class="grid g4">
+      <button class="go" data-go="history"><div class="im"><img src="img/history.jpg" alt="" loading="lazy"></div><div class="tx"><span class="mono k">02 · 10th c. — today</span><h3>History</h3><p>From forest tribes and witch hunts to the fight for rights.</p></div></button>
+      <button class="go" data-go="laws"><div class="im"><img src="img/laws.jpg" alt="" loading="lazy"></div><div class="tx"><span class="mono k">03 · FBDA & Meridian</span><h3>Laws</h3><p>Documents, chips, the registry and demi research.</p></div></button>
+      <button class="go" data-go="society"><div class="im"><img src="img/society.jpg" alt="" loading="lazy"></div><div class="tx"><span class="mono k">04 · Among humans</span><h3>Society</h3><p>Prejudice, daily life and demi communities.</p></div></button>
+      <button class="go" data-go="species"><div class="im"><img src="img/species.jpg" alt="" loading="lazy"></div><div class="tx"><span class="mono k">05 · Catalogue</span><h3>Species</h3><p>What demis can be, and why some species are rarer.</p></div></button>
+      <button class="go" data-go="ark"><div class="im"><img src="img/ark.jpg" alt="" loading="lazy"></div><div class="tx"><span class="mono k">06 · Underground</span><h3>The Ark</h3><p>The largest demi trafficking network in the world.</p></div></button>
+      <button class="go" data-go="people"><div class="im"><img src="img/noah.jpg" alt="" loading="lazy" style="object-position:center 25%"></div><div class="tx"><span class="mono k">07 · Dossiers</span><h3>Characters</h3><p>Key figures of the world and the people of Miami.</p></div></button>
+      <button class="go" data-go="miami"><div class="im"><img src="img/miami.jpg" alt="" loading="lazy"></div><div class="tx"><span class="mono k">08 · City</span><h3>Miami</h3><p>Districts, El Nido, the bar, the clinic and the police.</p></div></button>
+      <button class="go" data-go="bots"><div class="im"><img src="img/cassian.jpg" alt="" loading="lazy" style="object-position:center 20%"></div><div class="tx"><span class="mono k">09 · Janitor AI</span><h3>Bots</h3><p>Characters you can talk to.</p></div></button>
+    </div>
+  </section>
+</div>
+
+<!-- =============== 01 BASICS =============== -->
+<div class="view" id="v-basics">
+  <div class="banner plain br">
+    <div class="meta mono"><span>FILE 01 / BIOLOGY</span><span>Homo · demi</span></div>
+    <div class="title"><span class="mono">Demi nature</span><h1>Human and beast<br>in one body</h1></div>
+    <span class="rb big" aria-hidden="true"></span>
+  </div>
+  <p class="page-lead">A <b>demi-human</b> is a sentient humanoid being that has biologically inherited some traits of a particular animal species. Demis evolved alongside humans.</p>
+  <div class="subnav"></div>
+
+  <section class="block" data-title="Forms">
+    <div class="sh"><span class="num">§ 01.1</span><h2>Two forms</h2></div>
+    <div class="grid g2">
+      <div class="card"><div class="tag"><span class="mono k">Human form</span><span class="mono">primary</span></div><h3>Almost human</h3>
+        <ul class="clean">
+          <li>Always 2–3 animal features: ears, a tail, claws, fangs, wings — depending on the species.</li>
+          <li>Skin without fur, ordinary human pupils. Only the eye colour may be unusual.</li>
+          <li>1–2 species abilities. Not magic, just a slightly heightened human ability: sharper smell or hearing, a little more strength or stamina, better night vision.</li>
+        </ul>
+      </div>
+      <div class="card"><div class="tag"><span class="mono k">Animal form</span><span class="mono">at will</span></div><h3>Indistinguishable from an animal</h3>
+        <ul class="clean">
+          <li>A demi is identical to an animal of their species. Humans can barely tell them apart, except by a too-knowing gaze or understanding of speech.</li>
+          <li>Mind, memory and understanding of speech remain, but they cannot talk: an animal's throat isn't built for it.</li>
+          <li>Ordinary animals instantly sense that a demi is "not one of them" and often react warily or aggressively. Demis can only talk to them through body language.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Growth">
+    <div class="sh"><span class="num">§ 01.2</span><h2>Growth and age</h2></div>
+    <div class="prose"><p>Demis are born in human form and grow up like ordinary people. If a demi prefers the animal form, they develop faster — at the pace of their species. Both forms are linked: time spent in one ages the other too.</p></div>
+    <div class="readouts" style="margin:20px 0 16px">
+      <div class="ro"><span class="mono">1 year as a cat</span><b>≈ 15 years</b><span>after shifting back, the demi is as developed as a teenager</span></div>
+      <div class="ro"><span class="mono">10 years as a cat</span><b>≈ 55–60</b><span>human years in body and mind</span></div>
+      <div class="ro"><span class="mono">Conclusion</span><b>Longer</b><span>life in human form lasts longer</span></div>
+    </div>
+    <div class="grid g2">
+      <div class="card"><h3>Instincts</h3><p>Almost no living demis have them. Instincts survive only in communities that split off from humans and other demis long ago: in isolation, evolution slowed down.</p></div>
+      <div class="card"><h3>Health</h3><p>Demis catch both human illnesses and those of their species. So they are treated by doctors and vets alike, depending on the illness.</p></div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Offspring">
+    <div class="sh"><span class="num">§ 01.3</span><h2>Reproduction and inheritance</h2></div>
+    <div class="grid g2">
+      <div class="card"><span class="mono k">Demi + demi of the same species</span><h3>Always a demi of that species</h3><p>Different species cannot have children, so species never mix. A demi she-wolf can only conceive with a demi wolf, never with a demi dog.</p></div>
+      <div class="card"><span class="mono k">Demi + human</span><h3>Less predictable</h3>
+        <div class="ratio" role="img" aria-label="63 percent demi, 37 percent human"><div class="a">demi 63%</div><div class="b">human 37%</div></div>
+        <p>It doesn't matter which partner is the man and which is the woman: the odds are the same. A demi child is always the same species as the demi parent.</p></div>
+    </div>
+    <p class="note" style="margin-top:14px">Conception is possible <b>only in human form</b>.</p>
+  </section>
+
+  <section class="block" data-title="Shifting">
+    <div class="sh"><span class="num">§ 01.4</span><h2>How shifting works</h2></div>
+    <div class="steps">
+      <div class="step"><b>10–30 sec</b><p>How long a shift takes, depending on the size difference between forms.</p></div>
+      <div class="step"><b>Feeling</b><p>Not painful but unpleasant: a deep ache, as if pulled in every direction. Afterwards, tiredness and hunger.</p></div>
+      <div class="step"><b>Mass</b><p>Not conserved: a 70 kg demi wolf weighs as much as an ordinary wolf. Where it goes, scientists don't know.</p></div>
+      <div class="step"><b>Clothes</b><p>Don't change with the body and simply fall off. So demis wear loose clothes, and there are brands with slits for tails and wings.</p></div>
+      <div class="step"><b>Chip</b><p>Moves: between the collarbones in human form, on the scruff in animal form.</p></div>
+    </div>
+    <div class="grid g3" style="margin-top:16px">
+      <div class="card"><h3>Limits</h3>
+        <ul class="clean">
+          <li>At least four hours between shifts. Until then, there is no going back.</li>
+          <li>Injuries carry over equally from one form to the other.</li>
+          <li>Shifting takes focus: in strong agitation, in pain or with a clouded mind, it won't work.</li>
+        </ul>
+      </div>
+      <div class="card"><h3>The first shift</h3>
+        <ul class="clean">
+          <li>Happens at 3–5, almost always on its own: in sleep, in warmth, in complete calm.</li>
+          <li>Children learn to control it with their parents' help, and by 7–10 most shift at will.</li>
+          <li>Parents make sure a child doesn't stay too long in animal form: a few months as a kitten or puppy can "steal" years of childhood.</li>
+        </ul>
+      </div>
+      <div class="card"><h3>Special cases</h3>
+        <ul class="clean">
+          <li>Shifting is extremely dangerous during pregnancy: in animal form the baby may die, so doctors forbid it for the whole term.</li>
+          <li>Alcohol, strong medication and drugs make it hard to focus, so shifting becomes very difficult.</li>
+          <li>Demis who live as animals for months or years pick up the habits of their species. These aren't instincts, but going back to a human life is hard.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- =============== 02 HISTORY =============== -->
+<div class="view" id="v-history">
+  <div class="banner br">
+    <img src="img/history.jpg" alt="">
+    <div class="meta mono"><span>FILE 02 / HISTORY</span><span>X — XXI</span></div>
+    <div class="title"><span class="mono">History</span><h1>A thousand years in the shadows</h1></div>
+  </div>
+  <p class="page-lead">At first humans had no idea demis were sentient and took them for strange mutant animals: back then their animal traits were far more pronounced. Demis lived in packs or alone in forests, fields and deserts.</p>
+
+  <div class="timeline" style="margin-top:36px">
+    <div class="era">
+      <div class="when">10th–11th centuries</div>
+      <h3>The birth of culture</h3>
+      <p>Human thinking fully formed in demis, along with their own culture, morals and laws. They gathered into tribes — at first related species, "predators" or "prey", to survive more easily.</p>
+      <p>The boldest went out to explore the world and met humans. Some taught demis crafts and letters, some ran to church, some attacked. Thanks to the calmer humans, the tribes grew into real hidden settlements.</p>
+    </div>
+    <div class="era dark">
+      <div class="when">12th–14th centuries</div>
+      <h3>Felled forests and plague</h3>
+      <p>The human population grew, forests were cleared for fields, and demi settlements became easy to find. Small "wars" began: humans found strange houses in the woods and attacked at night.</p>
+      <p>The plague of the mid-14th century brought a respite — abandoned land grew back into forest. But in many places demis were blamed for the pestilence, and the attacks grew even crueller.</p>
+    </div>
+    <div class="era">
+      <div class="when">15th–16th centuries</div>
+      <h3>Stepping out to humans</h3>
+      <p>Demis realised they couldn't hide forever and began sending disguised scouts into towns. They came back and taught the rest: weapons, economics, religions, writing.</p>
+      <p>That was also when it turned out a demi and a human could have children. For a people who had lost about 20% of their numbers by the 16th century, it was both salvation and a curse. The most hopeful tribes tried to make peace with humans, but in an age of religious wars they were usually seen as demons.</p>
+      <span class="loss">−20% by the 16th century · then another −5%</span>
+    </div>
+    <div class="era dark">
+      <div class="when">Late 16th — mid 17th century</div>
+      <h3>The witch hunts</h3>
+      <p>The darkest time. Demis were caught and executed at the stake and on the gallows alongside humans accused of witchcraft. After that, demis decided to stop seeking peace with humans: every attempt ended in slaughter.</p>
+    </div>
+    <div class="era">
+      <div class="when">18th–19th centuries</div>
+      <h3>From demons to a mystery</h3>
+      <p>The witch hunts faded, the church's influence waned, and superstition gave way to science. In the 19th century scientists recognised demis as a separate species that evolved alongside humans. A fragile peace began — or something like it.</p>
+    </div>
+    <div class="era dark">
+      <div class="when">20th century</div>
+      <h3>Wars and rights</h3>
+      <p>Ideas of "purity" and "inferiority" made demis a target again, and during the world wars they suffered persecution. But it was after this that the world began to speak seriously about rights — including the rights of demis.</p>
+    </div>
+    <div class="era">
+      <div class="when">Today</div>
+      <h3>A fragile peace</h3>
+      <p>The hierarchy is still obvious, but demis can live in cities without fearing their families will be slaughtered. Now they fight for their rights and dream of equality.</p>
+    </div>
+  </div>
+</div>
+
+<!-- =============== 03 LAWS =============== -->
+<div class="view" id="v-laws">
+  <div class="banner br">
+    <img src="img/laws.jpg" alt="">
+    <div class="meta mono"><span>FILE 03 / LAW</span><span>FBDA · Meridian</span></div>
+    <div class="title"><span class="mono">Laws</span><h1>Almost equal</h1></div>
+  </div>
+  <p class="page-lead">On paper, demis have most human rights. But people still see them as closer to animals, and the laws keep a few exceptions.</p>
+  <div class="subnav"></div>
+
+  <section class="block" data-title="Basics">
+    <div class="sh"><span class="num">§ 03.1</span><h2>How the law treats demis differently</h2></div>
+    <div class="grid g3">
+      <div class="card"><h3>Sports</h3><p>Demis may not compete alongside humans because of a possible physical advantage.</p></div>
+      <div class="card"><h3>Two extra documents</h3><p>Besides the ordinary ID, every demi must always carry a demi-human passport and a veterinary passport.</p></div>
+      <div class="card"><h3>Chip</h3><p>Every demi gets a chip implanted between the collarbones at birth. The authorities say it helps track criminals. The certificate is kept in the vet passport.</p></div>
+      <div class="card"><h3>Minor rules</h3><p>Separate lines in some offices and no entry where there are animals — so the animals don't react unpredictably.</p></div>
+      <div class="card"><h3>Protection</h3><p>Bans on discrimination and harassment, on trading in demis and "owning" them, are spelled out separately — just as for humans.</p></div>
+      <div class="card"><h3>Unwritten</h3><p>The law doesn't forbid it, but no demi has ever held a senior executive or government position.</p></div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Documents">
+    <div class="sh"><span class="num">§ 03.2</span><h2>Demi documents</h2></div>
+    <p class="page-lead" style="margin-top:0;margin-bottom:20px">Every demi must always carry three documents. Without them, any check ends with a trip to the station "until identity is confirmed".</p>
+    <div class="grid g3">
+      <div class="card hl"><div class="tag"><span class="mono k">Document 1 · FBDA</span><span class="mono">5 years</span></div><h3>Demi Identification Card</h3>
+        <p>A small plastic card that looks like a driver's licence.</p>
+        <ul class="clean">
+          <li>Photos in both forms — human and animal.</li>
+          <li>Name, surname, date of birth, species and breed.</li>
+          <li>Distinguishing features: coat, ears, tail, wings.</li>
+          <li>Chip number, ID number and vet passport number.</li>
+          <li>Issue and expiry dates.</li>
+          <li>In the corner, the posthumous consent stamp "demi research is permitted". It is added by default, and most demis don't even know they have it.</li>
+        </ul>
+      </div>
+      <div class="card hl"><div class="tag"><span class="mono k">Document 2 · vet clinic</span><span class="mono">5 years</span></div><h3>Veterinary passport</h3>
+        <p>A booklet filled in by hand at an accredited vet clinic after a full examination in animal form.</p>
+        <ul class="clean">
+          <li>"Description of animal / demi": a photo in animal form, name, species, breed, sex, date of birth, coat.</li>
+          <li>"Identification": a barcode sticker with the chip number and the date of chipping.</li>
+          <li>Fields for a tattoo number and date — for tattooed animals.</li>
+          <li>The demi ID card number.</li>
+          <li>Vaccination records and the chipping certificate.</li>
+          <li>Identity must be verified before any new entry.</li>
+        </ul>
+      </div>
+      <div class="card hl"><div class="tag"><span class="mono k">Document 3 · state</span><span class="mono">5 years</span></div><h3>Identification card</h3>
+        <p>An ordinary state ID — the same one humans have.</p>
+        <ul class="clean">
+          <li>Photo, name and surname, signature.</li>
+          <li>Address, date of birth, sex and height.</li>
+          <li>ID number, issue and expiry dates.</li>
+          <li>In Florida it is valid for 8 years for humans, but only 5 for demis, renewed together with the other documents.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" data-title="FBDA">
+    <div class="sh"><span class="num">§ 03.3</span><h2>FBDA</h2></div>
+    <div class="prose">
+      <p>The <b>Federal Bureau of Demi-Human Affairs</b> handles everything about demis in the US: it issues demi and vet passports, keeps the federal chip registry, accredits vet clinics and takes complaints. Every large city has a branch, and all of them are known for endless lines and lost paperwork.</p>
+      <p>The bureau is headed by <a href="#npc-kessler">Harold Kessler</a>. His idea is "safety through records": demis are not dangerous as long as everything about each of them is known. In public he talks about "protecting demis" and is seen as a moderate official, though every reform adds more lines, fees and reasons for detention. He is now pushing for a mandatory yearly re-registration of address.</p>
+    </div>
+    <div class="grid g3" style="margin-top:18px">
+      <div class="card hl"><span class="mono k">Every 5 years</span><h3>Renewal</h3><p>A vet exam at an accredited clinic, a fee and a line at the FBDA. Expired papers mean a fine, and during a police check, detention "until identity is confirmed", sometimes for days.</p></div>
+      <div class="card hl"><span class="mono k">By default</span><h3>Posthumous consent</h3><p>The first time documents are issued, they get a stamp "demi research is permitted" — consent to donate the body to science. Opting out means a notarised application, a fee and months of waiting. Unclaimed bodies almost always end up in labs.</p></div>
+      <div class="card hl"><span class="mono k">Federal</span><h3>Chip registry</h3><p>Every chip is tied to a record. A demi without a chip, or with a chip not in the registry, is "unidentified" and subject to detention. Sometimes records simply "get lost".</p></div>
+    </div>
+    <div class="spoiler" style="margin-top:14px"><div class="sp-body"><p>The Ark has its own people in the bureau. They mark kidnapped demis as "deceased" or "moved out of the country", or simply delete them. That's why almost no one looks for missing demis.</p></div></div>
+  </section>
+
+  <section class="block" data-title="Meridian">
+    <div class="sh"><span class="num">§ 03.4</span><h2>Meridian Life Sciences</h2></div>
+    <div class="prose">
+      <p>The largest demi research corporation in the country, headquartered in New York. Officially it develops medicines and vaccines and studies shifting and development in two forms. Several research centres, its own clinics, generous government grants. The company is proud of "making demi lives safer" and really does make medicines used across the country.</p>
+      <p>It is run by <a href="#npc-laurent">Dr. Yvette Laurent</a>.</p>
+    </div>
+    <h3 style="margin:22px 0 12px">What keeps the work going</h3>
+    <div class="grid g3">
+      <div class="card"><span class="mono k">Source 1</span><h3>Paid volunteers</h3><p>Demis who sign up for studies out of poverty. Long, confusing contracts, cut corners on care, delayed payments. Anyone who leaves early gets nothing.</p></div>
+      <div class="card"><span class="mono k">Source 2</span><h3>Bodies</h3><p>Thanks to default posthumous consent, the company receives almost every deceased demi not claimed by relatives.</p></div>
+      <div class="spoiler"><div class="sp-body"><span class="mono" style="color:var(--secret)">Source 3</span><h3>"Failed lots"</h3><p>Demis the Ark couldn't sell end up in Meridian's closed department, where they don't exist in any registry.</p></div></div>
+    </div>
+    <div class="spoiler" style="margin-top:14px"><div class="sp-body">
+      <h3>Project Threshold</h3>
+      <p>The company's biggest secret and Yvette Laurent's brainchild. Scientists are trying to understand where mass "disappears" during a shift and to control shifting from outside: forcing demis to change form, or locking them in one. Legal volunteers won't do for dangerous experiments, so Meridian needs the Ark as much as the Ark needs Meridian.</p>
+    </div></div>
+  </section>
+</div>
+
+<!-- =============== 04 SOCIETY =============== -->
+<div class="view" id="v-society">
+  <div class="banner br">
+    <img src="img/society.jpg" alt="">
+    <div class="meta mono"><span>FILE 04 / SOCIETY</span><span>no demi allowed</span></div>
+    <div class="title"><span class="mono">Society</span><h1>Clever pets</h1></div>
+  </div>
+  <p class="page-lead">The law mostly treats demis and humans as equals; society doesn't. Demis are feared, disliked and seen as something like clever house pets.</p>
+  <div class="subnav"></div>
+
+  <section class="block" data-title="Enemies">
+    <div class="sh"><span class="num">§ 04.1</span><h2>Enemies of demis</h2></div>
+    <div class="grid g2">
+      <div class="card red"><div class="tag"><span class="mono">Underground</span><span class="mono">trade</span></div><h3>Traffickers and collectors</h3><p>Many underground groups sell demis. Collectors buy rare species at auctions for huge sums and keep demis as familiars, lovers or servants. It's punished like human trafficking, but the police take such cases reluctantly, and influential buyers easily hush things up. The biggest network is <a href="#ark">the Ark</a>: everyone has heard of it, but no one really knows anything.</p></div>
+      <div class="card red"><div class="tag"><span class="mono">Politics</span><span class="mono">senate</span></div><h3>Senator Roger Braddock</h3><p>The best-known opponent of demi rights. He calls them "creatures", dangerous because they're unpredictable. His main project is the "Demi Safety Act": GPS chips instead of ordinary ones, a ban on working with children, in medicine and in law enforcement, and the right for landlords to refuse demis without explanation. He turns every radical attack into a TV show and calls activists "animal lawyers". His campaigns are generously funded by Meridian. Rumour has it he is one of the Ark's Guardians himself. <a href="#npc-braddock">Dossier</a></p></div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Daily life">
+    <div class="sh"><span class="num">§ 04.2</span><h2>What demis face every day</h2></div>
+    <div class="grid g3">
+      <div class="card"><h3>Stickers</h3><p>Next to "no animals" on the door hangs "no demi". That's discrimination — until the owner cites "fur in the food". Then the law shrugs and suggests eating somewhere else.</p></div>
+      <div class="card"><h3>Restrooms</h3><p>Some malls add a fourth restroom: women's, men's, accessible, and demi.</p></div>
+      <div class="card"><h3>Money</h3><p>Higher taxes and the cost of extra documents.</p></div>
+      <div class="card"><h3>Glass ceiling</h3><p>No official bans, but climbing high on the career ladder is almost impossible for a demi.</p></div>
+      <div class="card"><h3>Research</h3><p>On paper, labs follow the Nuremberg Code. In reality demis sign up out of need, and violations are excused because the code speaks of humans and demis are a separate species. Many are left with trauma afterwards, more often psychological.</p></div>
+      <div class="card"><h3>Hot potato</h3><p>Doctors send demis to vets, vets send them back. One office refers to another, and round it goes. Even filing a complaint is very hard.</p></div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Communities">
+    <div class="sh"><span class="num">§ 04.3</span><h2>Demi communities</h2></div>
+    <p class="page-lead" style="margin:0 0 18px">Surviving alone in a human world is harder, so demis stick together.</p>
+    <div class="grid g2">
+      <div class="card"><h3>Demi quarters</h3><p>Neighbourhoods where demis live closest together: places without banning stickers, shops with demi clothing, doctors who don't send you to a vet. People call them anything from a neutral "demi quarter" to a contemptuous "zoo". In Miami, it's <a href="#miami">El Nido</a>.</p></div>
+      <div class="card"><h3>Species communities (clans)</h3><p>Demis of one species band together to find partners, keep traditions and help their own. The old split into "predators" and "prey" is still alive: a demi rabbit is unlikely to feel at ease next to a demi wolf.</p></div>
+      <div class="card"><h3>Closed communities</h3><p>Settlements that never came out to humans after the 17th century. They live in the wilds, keep old traditions, don't recognise human laws, and only they still have instincts. Some city demis respect them; others call them "savages".</p></div>
+      <div class="card"><h3>Mutual aid networks</h3><p>Unofficial: through friends, demis learn which doctor to see, which employer doesn't discriminate, who will rent to them. This includes secret shelters for those who escaped collectors or labs.</p></div>
+    </div>
+    <div class="grid g2" style="margin-top:14px">
+      <div class="card hl"><div class="tag"><span class="mono k">Activists</span><span class="mono">legal</span></div><h3>No Cages</h3><p>One of the best-known movements in the US, led by demi lynx <a href="#npc-amara">Amara Okafor</a>. Legal methods only: lawsuits, petitions, rallies, investigative journalism. Goals: abolish the extra documents and taxes, amend the Nuremberg Code, end default posthumous consent and investigate demi disappearances. It runs a hotline, free lawyers and many human volunteers.</p></div>
+      <div class="card red"><div class="tag"><span class="mono">Radicals</span><span class="mono">the feral</span></div><h3>The Feral</h3><p>Few but loud. Their leader is demi wolf <a href="#npc-cyrus">Cyrus Kane</a>, a former prisoner of the Ark. Scattered cells across the country burn warehouses, attack transport vans and labs, free prisoners and take revenge on kidnappers. Bystanders sometimes get hurt, and Braddock shows every raid on the news as proof that demis are dangerous.</p></div>
+    </div>
+  </section>
+</div>
+
+<!-- =============== 05 SPECIES =============== -->
+<div class="view" id="v-species">
+  <div class="banner plain br">
+    <div class="meta mono"><span>FILE 05 / SPECIES CATALOGUE</span><span>Mammalia · Aves</span></div>
+    <div class="title"><span class="mono">Species</span><h1>What demis can be</h1></div>
+    <span class="rb big" aria-hidden="true"></span>
+  </div>
+  <p class="page-lead">Only warm-blooded animals — mammals and birds. There are no reptile, fish or insect demis. The animal form ranges from small rodents to bears; there are no demi elephants or whales.</p>
+
+  <div class="plate br" style="margin-top:26px"><img src="img/species.jpg" alt="Species plate: fox, hare, raven, wolf, lynx, eagle-owl"></div>
+
+  <div class="rarity">
+    <div class="rar">
+      <div class="meter"><i class="f"></i><i></i><i></i></div>
+      <div class="tag" style="display:flex;justify-content:space-between"><h3>Common</h3><span class="mono muted">class I</span></div>
+      <div class="chips"><span class="chip acc">cats<em>Felis</em></span><span class="chip acc">dogs<em>Canis</em></span><span class="chip acc">foxes<em>Vulpes</em></span><span class="chip acc">rabbits and hares<em>Lepus</em></span><span class="chip acc">corvids<em>Corvus</em></span><span class="chip acc">rats<em>Rattus</em></span></div>
+      <p class="muted">Lived near humans or in open country and came out to them more often.</p>
+    </div>
+    <div class="rar">
+      <div class="meter"><i class="f"></i><i class="f"></i><i></i></div>
+      <div class="tag" style="display:flex;justify-content:space-between"><h3>Rare</h3><span class="mono muted">class II</span></div>
+      <div class="chips"><span class="chip acc">wolves<em>Canis lupus</em></span><span class="chip acc">deer<em>Cervus</em></span><span class="chip acc">owls<em>Strix</em></span><span class="chip acc">birds of prey<em>Accipitridae</em></span><span class="chip acc">lynxes<em>Lynx</em></span><span class="chip acc">bears<em>Ursus</em></span></div>
+      <p class="muted">Lived in hard-to-reach places or suffered most from persecution.</p>
+    </div>
+    <div class="rar r3">
+      <div class="meter"><i class="f"></i><i class="f"></i><i class="f"></i></div>
+      <div class="tag" style="display:flex;justify-content:space-between"><h3>Very rare</h3><span class="mono" style="color:var(--secret)">class III</span></div>
+      <div class="chips"><span class="chip sec">tigers<em>Panthera tigris</em></span><span class="chip sec">snow leopards<em>Panthera uncia</em></span><span class="chip sec">exotic birds</span></div>
+      <p class="muted">A handful per country. Collectors hunt them, and at underground auctions they are the most expensive lots.</p>
+    </div>
+  </div>
+
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card"><span class="mono k">Aves</span><h3>Wings that can't fly</h3><p>Bird demis keep their wings in human form, but a human body is too heavy to fly. They only fly as birds. The wings of bird demis are an obsession for some collectors.</p></div>
+    <div class="card"><span class="mono k">Familiar faces</span><h3>Species of our characters</h3>
+      <div class="chips"><a class="chip acc" href="#npc-amara">lynx · Amara Okafor</a><a class="chip acc" href="#npc-cyrus">wolf · Cyrus Kane</a><a class="chip acc" href="#npc-nico">rabbit · Nico Mendoza</a><a class="chip acc" href="#npc-cassian">cat · Cassian</a><a class="chip acc" href="#npc-owen">dog · Owen Delacroix</a><span class="chip sp">raven · Adrian Vale</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =============== 06 ARK =============== -->
+<div class="view" id="v-ark">
+  <div class="banner br">
+    <img src="img/ark.jpg" alt="">
+    <div class="meta mono"><span>FILE 06 / THE ARK</span><span>status: urban legend</span></div>
+    <div class="title"><span class="mono">Underground</span><h1>The Ark</h1></div>
+  </div>
+  <p class="page-lead">The largest underground demi trafficking network in the world. It operates in dozens of countries and officially doesn't exist. The police consider the Ark an urban legend.</p>
+  <div class="subnav"></div>
+
+  <section class="block" data-title="Foundation">
+    <div class="sh"><span class="num">§ 06.1</span><h2>The Ark Foundation</h2></div>
+    <div class="ark-top">
+      <div class="logo-box br">
+        <img src="img/ark-logo.webp" alt="The Ark Foundation logo">
+        <span class="mono muted">"Every creature deserves a harbor"</span>
+      </div>
+      <div class="prose">
+        <p>"The Ark Foundation for Species Preservation" is a real charity. Its reserves, shelters, vet clinics and rare-animal transport programmes really work, and most of its staff are honest people.</p>
+        <p>The foundation's president is <a href="#npc-leonora">Leonora Sterling</a>. Her motto: "every creature deserves a harbor". Her greatest pride is free check-ups for demis. Leonora pushes for the foundation's clinics to get FBDA accreditation and do the exams needed for document renewal. She speaks of demis with the same tenderness as of rescued kittens and doesn't notice how condescending it is.</p>
+        <p>The logo is a little ark on three waves under an olive branch, in teal and gold. It looks kind and harmless.</p>
+        <div class="spoiler"><div class="sp-body"><p>This is exactly where the Ark hides. Leonora knows nothing about the underground. The foundation is secretly funded and steered by Noah — to everyone else, just a generous anonymous patron. When anyone suspects the foundation, Leonora takes it as a personal insult and is the first to defend it.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Structure">
+    <div class="sh"><span class="num">§ 06.2</span><h2>How the network works</h2></div>
+    <p class="page-lead" style="margin:0 0 16px">In the US the Ark has three main hubs: New York, Los Angeles and <a href="#miami">Miami</a>. Each member knows only their own part of the work.</p>
+    <div class="roles">
+      <div class="role"><span class="mono">Catchers</span><h3>Catchers</h3><p>Find and kidnap demis: loners, the homeless, those no one will look for. Sometimes they buy up debts or lure victims with "job offers".</p></div>
+      <div class="role"><span class="mono">Keepers</span><h3>Keepers</h3><p>Hold prisoners and "prepare" them for sale. First they remove the chip and swap the documents.</p></div>
+      <div class="role"><span class="mono">Guardians</span><h3>Guardians</h3><p>The buyers: wealthy collectors, politicians, businessmen. You get into their circle only by recommendation.</p></div>
+      <div class="role"><span class="mono">Head</span><h3>Noah</h3><p>The head of the organisation is unknown. Insiders call him Noah.</p></div>
+    </div>
+    <div class="spoiler" style="margin-top:14px"><div class="sp-body">
+      <h3>The scheme inside the foundation</h3>
+      <ul class="clean">
+        <li>At the free vet clinics, they pick out lonely demis no one will look for.</li>
+        <li>Prisoners are held in closed shelters and "quarantine centres".</li>
+        <li>Demis are shipped out in animal form through official animal transport, on papers for ordinary animals.</li>
+        <li>Buyers pay with large "donations" to the foundation, and the money reaches insiders through invented expenses.</li>
+      </ul>
+    </div></div>
+  </section>
+
+  <section class="block" data-title="Exhibitions">
+    <div class="sh"><span class="num">§ 06.3</span><h2>Auctions — the "Exhibitions"</h2></div>
+    <div class="grid g2">
+      <div class="card"><p style="color:var(--ink)">Every few months the Ark holds closed auctions at private estates or on yachts in neutral waters. Guests wear masks. Lots are described like animals: species, coat, "temperament", "obedience".</p></div>
+      <div class="card"><h3>Most valued</h3><div class="chips"><span class="chip sec">very rare species</span><span class="chip sec">bird demis with beautiful wings</span><span class="chip sec">fully "prepared" demis</span></div></div>
+    </div>
+    <p class="note" style="margin-top:14px"><b>Untouchable.</b> Some Guardians are very influential, so investigations fall apart: evidence disappears, witnesses withdraw their statements.</p>
+  </section>
+
+  <section class="block" data-title="The mark">
+    <div class="sh"><span class="num">§ 06.4</span><h2>The mark</h2></div>
+    <div class="mark-row">
+      <div class="mark-box br"><span class="mark" aria-label="The Ark's mark" role="img"></span><span class="mono muted">≈ 1.5 cm · black ink</span></div>
+      <div class="prose">
+        <p>Demis who pass through the Ark are marked with a small tattoo or brand shaped like a little boat — usually behind the ear, sometimes on the inner wrist.</p>
+        <p>It's a simplified outline of the logo: only the hull and three wave lines, without the branch or text. An outsider will take it for an ordinary small tattoo. Insiders recognise it at once. And anyone who has seen the foundation's logo will sooner or later notice it's the same drawing.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- =============== 07 PEOPLE =============== -->
+<div class="view" id="v-people">
+  <div class="banner plain br">
+    <div class="meta mono"><span>FILE 07 / PERSONAE</span><span>18 records</span></div>
+    <div class="title"><span class="mono">Characters</span><h1>Who's who</h1></div>
+    <span class="rb big" aria-hidden="true"></span>
+  </div>
+  <p class="page-lead">Click a card to open the dossier. Secret roles and secrets are hidden under spoilers.</p>
+  <div class="filter" role="group" aria-label="Character filter">
+    <button data-f="all" aria-pressed="true">All</button>
+    <button data-f="world" aria-pressed="false">World</button>
+    <button data-f="miami" aria-pressed="false">Miami</button>
+    <button data-f="demi" aria-pressed="false">Demis only</button>
+  </div>
+  <div id="peopleWrap"></div>
+</div>
+
+<!-- =============== 08 MIAMI =============== -->
+<div class="view" id="v-miami">
+  <div class="banner br">
+    <img src="img/miami.jpg" alt="">
+    <div class="meta mono"><span>FILE 08 / MIAMI, FL</span><span>25.77° N · 80.19° W</span></div>
+    <div class="title"><span class="mono">City</span><h1>Miami</h1></div>
+  </div>
+  <p class="page-lead">A huge, noisy, hot city in southeast Florida. Glass towers and millionaires' yachts sit next to cheap apartment blocks where people live paycheck to paycheck. Tourists, parties, money — and plenty of places to vanish without a trace.</p>
+  <div class="subnav"></div>
+
+  <section class="block" data-title="City">
+    <div class="sh"><span class="num">§ 08.1</span><h2>The city</h2></div>
+    <div class="readouts" style="margin:0">
+      <div class="ro"><span class="mono">Climate</span><span style="color:var(--ink)">Humid heat all year. In summer, tropical downpours almost every afternoon; June to November is hurricane season.</span></div>
+      <div class="ro"><span class="mono">People</span><span style="color:var(--ink)">Spanish is heard as often as English. The city was built by Cubans, Haitians, Venezuelans, Colombians and dozens of other communities.</span></div>
+      <div class="ro"><span class="mono">Gateway</span><span style="color:var(--ink)">One of the world's largest cruise ports and a huge airport.</span></div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Districts">
+    <div class="sh"><span class="num">§ 08.2</span><h2>Districts</h2></div>
+    <div class="map-wrap">
+      <div class="map br">
+        <svg viewBox="0 0 600 700" role="img" aria-label="Schematic map of Miami districts">
+          <rect class="water" x="0" y="0" width="600" height="700"/>
+          <g id="gridLines"></g>
+          <path class="land" d="M0 0 H405 Q398 120 402 210 Q404 300 388 360 Q372 420 350 470 Q330 540 300 600 Q280 650 270 700 H0Z"/>
+          <path class="glades" d="M0 470 Q90 450 160 520 Q200 560 230 700 H0Z"/>
+          <path class="land" d="M492 30 Q505 150 506 240 Q506 300 496 330 Q488 300 486 240 Q484 140 486 30Z"/>
+          <ellipse class="land" cx="445" cy="345" rx="10" ry="6"/>
+          <ellipse class="land" cx="462" cy="370" rx="12" ry="7"/>
+          <text class="small" x="430" y="200" transform="rotate(-88 430 200)">BISCAYNE BAY</text>
+          <text class="small" x="530" y="420">ATLANTIC</text>
+          <text class="small" x="30" y="560">EVERGLADES</text>
+          <path d="M318 30 V420" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="5 5" opacity=".6"/>
+          <text class="small" x="300" y="24">I-95</text>
+          <text class="small" x="14" y="690">SCHEMATIC · NOT TO SCALE</text>
+          <g id="mapDots"></g>
+        </svg>
+      </div>
+      <div class="card district" id="districtCard"></div>
+    </div>
+  </section>
+
+  <section class="block" data-title="El Nido">
+    <div class="sh"><span class="num">§ 08.3</span><h2>The demi quarter: El Nido</h2></div>
+    <div class="grid g2">
+      <div class="prose">
+        <p>"El Nido" (Spanish for "the nest") is Miami's unofficial demi quarter north of downtown, squeezed between Allapattah, Wynwood and Little Haiti along the I-95 overpasses.</p>
+        <p>A few blocks of peeling apartment buildings, laundry on the balconies, a street market, shops selling clothes with slits for tails and wings, a 24-hour laundromat, the La Madriguera bar and Doc's clinic.</p>
+        <p>There are no "no demi" stickers here, neighbours don't stare, and news and warnings spread faster than they reach the police. People from other neighbourhoods call El Nido "the Zoo".</p>
+      </div>
+      <div class="card"><span class="mono k">How Miami treats demis</span>
+        <p style="color:var(--ink)">Florida is a conservative state, and its demi laws are harsher than federal ones: a landlord can refuse a demi without explanation, and some schools put demi children in separate classes. But the city itself is too diverse to hate any one group, especially in poorer areas.</p>
+        <ul class="clean">
+          <li>In South Beach and Brickell, doors carry "no demi" stickers, and security may ask for documents.</li>
+          <li>In rich neighbourhoods, demi servants are fashionable: people talk about "their" kitty-maid like a pedigree dog.</li>
+          <li>During hurricanes, demis are sent to shelters "for people with pets".</li>
+          <li>Street demi kids, especially in animal form, are common in poor areas. Almost no one notices when they go missing.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Places">
+    <div class="sh"><span class="num">§ 08.4</span><h2>El Nido places</h2></div>
+    <div class="grid g2">
+      <div class="place br"><div class="in">
+        <span class="mono k">Bar · Spanish for "burrow"</span><h3>La Madriguera</h3>
+        <p>A tiny bar in the heart of the quarter, in an old building with peeling turquoise plaster. Above the door, a neon sign with floppy rabbit ears. Inside it's cramped and loud: yellow lamps, worn tables, a jukebox playing Latin music, and photos of regulars in both forms on the walls. It smells of fried plantains, rum and coffee. Under the counter there are always bowls of water for those who came in as animals.</p>
+        <p>The bar was opened by <a href="#npc-nico">Nico Mendoza</a>'s grandmother. People come here for news, jobs and housing, to leave notes, to eat on credit. They come here when someone goes missing — and this is where they first learn that someone else has, too.</p>
+        <div class="spoiler"><div class="sp-body"><p>In the back room and on the second floor, where Nico lives, there are rooms. He hides demis there who escaped collectors, labs or the Ark, until Doc patches them up and they find somewhere to go. Only insiders know.</p></div></div>
+      </div></div>
+      <div class="place br"><div class="in">
+        <span class="mono k">El Nido Community Clinic</span><h3>Doc's</h3>
+        <p>A former pharmacy on the corner across the street from the bar: a peeling sign, bars on the windows, a line on plastic chairs from early morning. Inside it's cramped but clean: two exam rooms, an old X-ray machine, carriers for patients in animal form.</p>
+        <p class="quote">"We treat everyone. In both forms"</p>
+        <p>The clinic is run by <a href="#npc-doc">Tobias "Doc" Oluwole</a>. Demis are treated both as people and as animals, without the "hot potato". Free for the poor, pay-what-you-can for the rest. No documents asked, even those without a chip are seen. It survives on donations, help from No Cages and Doc's stubbornness.</p>
+        <p class="note">The clinic is not FBDA-accredited, so exams for document renewal can't be done here. For those, demis have to go to accredited clinics such as Ark Haven.</p>
+      </div></div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Police">
+    <div class="sh"><span class="num">§ 08.5</span><h2>Miami police</h2></div>
+    <div class="grid g2">
+      <div class="prose">
+        <p>Huge, overloaded and tired. It is obliged to protect demis equally, but their cases always end up at the bottom of the pile. To many officers, demis are just trouble: the Feral, fights in El Nido, stray "animals", papers that are never in order.</p>
+        <p>The exception is <a href="#npc-ray">Detective Ray Sandoval</a> from Missing Persons. He has long noticed that demis vanish too often, too quietly and in too similar a way. His bosses tell him "not to waste time", but he keeps digging alone.</p>
+      </div>
+      <div class="card"><ul class="clean">
+        <li>Demis without documents or with an expired passport are taken in "until identity is confirmed", and may be handed over to the FBDA.</li>
+        <li>Missing demi reports are taken reluctantly: "probably shifted and ran off", "out partying". Without family, the case is closed almost at once.</li>
+        <li>The "demi liaison officer" is a single position for the whole city, usually spent on noise complaints.</li>
+        <li>Tourist and wealthy areas are well policed; El Nido gets what's left. Residents don't trust the police.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section class="block" data-title="The Ark">
+    <div class="sh"><span class="num">§ 08.6</span><h2>The Ark in Miami</h2></div>
+    <p class="page-lead" style="margin:0 0 16px">One of the three main branches in the US. The city is perfect for the demi trade: a port and an airport, private yachts, money no one checks and thousands of people no one looks for.</p>
+    <div class="grid g3">
+      <div class="spoiler"><div class="sp-body"><span class="mono" style="color:var(--secret)">Cover · Doral</span><h3>Ark Haven</h3><p>The foundation's vet clinic and exotic-animal shelter near the airport and warehouses. A bright building, flowerbeds, photos of rescued animals. FBDA-accredited: demis come here for free check-ups. Insiders pick lonely demis from patient files, and the "goods" leave the clinic as "exotic animals in foster care". Most of the vets have no idea.</p></div></div>
+      <div class="spoiler"><div class="sp-body"><span class="mono" style="color:var(--secret)">Prisoners · Homestead</span><h3>The Hold</h3><p>Officially, the foundation's "quarantine centre" on the edge of the Everglades: a high fence, kennels, greenhouses, no one for miles. Inside: enclosures, cages, tiled "washing" rooms and an office where chips are removed and marks applied. It smells of antiseptic and wet fur. Prisoners are "prepared" for the Exhibition for weeks or months.</p></div></div>
+      <div class="spoiler"><div class="sp-body"><span class="mono" style="color:var(--secret)">Auctions · Coconut Grove</span><h3>The Covenant yacht</h3><p>The foundation's huge white yacht for "charity cruises", moored at a private dock. Every few months Miami's Exhibitions take place on board: neutral waters, masked guests, "lots" in cages in the hold.</p></div></div>
+    </div>
+    <div class="spoiler" style="margin-top:14px"><div class="sp-body">
+      <h3>Branch staff</h3>
+      <ul class="clean">
+        <li><b>"The Captain" — Margaret Holloway</b>, head of the branch and director of Ark Haven. Reports directly to Noah and is the only one who sees the full picture.</li>
+        <li><b>Dr. Silas Reed</b> — Ark Haven vet and senior Keeper of the Hold.</li>
+        <li><b>Wade Mercer</b> — junior Keeper of the Hold, reports to Reed.</li>
+        <li><b>Dante Ruiz</b> — one of the best Catchers, works for the city's animal control.</li>
+        <li><b>Nora Bennett</b> — an insider at the FBDA office who deletes records of kidnapped demis from the registry.</li>
+      </ul>
+    </div></div>
+  </section>
+
+  <section class="block" data-title="Residents">
+    <div class="sh"><span class="num">§ 08.7</span><h2>People of Miami</h2></div>
+    <div class="people" id="miamiPeople"></div>
+  </section>
+</div>
+
+<!-- =============== 09 BOTS =============== -->
+<div class="view" id="v-bots">
+  <div class="banner plain br">
+    <div class="meta mono"><span>FILE 09 / JANITOR AI</span><span>series: demi world</span></div>
+    <div class="title"><span class="mono">Bots</span><h1>Talk to<br>the characters</h1></div>
+    <span class="rb big" aria-hidden="true"></span>
+  </div>
+  <p class="page-lead">Click an avatar to open the bot. The "Dossier" button shows the full character card. All of the creator's bots are on <a data-profile href="#" target="_blank" rel="noopener">vaileriii's Janitor AI profile</a>.</p>
+  <div class="bots" id="botsWrap"></div>
+</div>
+
+</main>
+
+<footer>
+  <span class="rb" aria-hidden="true"></span>
+  <span class="mono">The Demi-Human World · by vaileriii · made by AI</span>
+  <a class="mono" data-profile href="#" target="_blank" rel="noopener">vaileriii on Janitor AI ↗</a>
+</footer>
+
+<div class="overlay" id="overlay" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mName" id="modal"></div>
+</div>
+
+<script src="data-en.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

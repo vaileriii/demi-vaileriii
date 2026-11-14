@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Мир деми-хьюманов</title>
+<meta name="description" content="Путеводитель по миру деми-хьюманов: история, законы, общество, «Ковчег», персонажи, Майами и боты.">
+<link rel="icon" href="img/rabbits.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem("demi-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <button class="brand" data-go="home" aria-label="На главную">
+      <span class="rb" aria-hidden="true"></span>
+      <span><b>МИР ДЕМИ</b><small>by vaileriii</small></span>
+    </button>
+    <div class="toggles">
+      <button class="tbtn" id="spBtn" aria-pressed="false" title="Показать или скрыть все спойлеры">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>Спойлеры скрыты</span>
+      </button>
+      <button class="tbtn" id="langBtn" aria-label="Switch to English" title="English version"><b>EN</b></button>
+      <button class="tbtn" id="themeBtn" aria-label="Переключить тему">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></svg>
+        <span id="themeLabel">Тема</span>
+      </button>
+    </div>
+  </div>
+  <nav class="tabs" role="tablist" aria-label="Разделы путеводителя">
+    <button class="tab" role="tab" data-go="home"><i>00</i>Главная</button>
+    <button class="tab" role="tab" data-go="basics"><i>01</i>Природа</button>
+    <button class="tab" role="tab" data-go="history"><i>02</i>История</button>
+    <button class="tab" role="tab" data-go="laws"><i>03</i>Законы</button>
+    <button class="tab" role="tab" data-go="society"><i>04</i>Общество</button>
+    <button class="tab" role="tab" data-go="species"><i>05</i>Виды</button>
+    <button class="tab" role="tab" data-go="ark"><i>06</i>«Ковчег»</button>
+    <button class="tab" role="tab" data-go="people"><i>07</i>Персонажи</button>
+    <button class="tab" role="tab" data-go="miami"><i>08</i>Майами</button>
+    <button class="tab" role="tab" data-go="bots"><i>09</i>Боты</button>
+  </nav>
+</header>
+
+<main>
+
+<!-- =============== 00 HOME =============== -->
+<div class="view" id="v-home">
+  <div class="banner hero br">
+    <img src="img/hero.jpg" alt="">
+    <div class="meta mono"><span>FILE 00 / INDEX</span><span>Felis · Lepus · Corvus · Canis</span></div>
+    <div class="title">
+      <span class="mono">Путеводитель по вселенной</span>
+      <h1>Мир деми-хьюманов</h1>
+      <p class="lead">Деми веками прятались в лесах. Сегодня они живут в городах, ходят на работу и стоят в очередях за документами, но для общества всё ещё остаются «умными питомцами».</p>
+    </div>
+    <span class="rb" aria-hidden="true"></span>
+  </div>
+
+  <div class="readouts">
+    <div class="ro"><span class="mono">Популяция</span><b>1 : 5000</b><span>столько деми приходится на людей</span></div>
+    <div class="ro"><span class="mono">Превращение</span><b>≥ 4 ч</b><span>минимум между двумя превращениями</span></div>
+    <div class="ro"><span class="mono">Деми + человек</span><b>63 / 37 %</b><span>шанс, что родится деми / человек</span></div>
+    <div class="ro"><span class="mono">Учёт FBDA</span><b>2 + чип</b><span>лишних документа и вживлённый чип у каждого</span></div>
+  </div>
+
+  <div class="author br">
+    <span class="rb" aria-hidden="true"></span>
+    <div class="a-tx"><span class="mono k">Автор сеттинга и ботов</span><b>vaileriii</b><p class="muted">Все боты этого мира и другие персонажи — в профиле на Janitor AI.</p></div>
+    <a class="btn pri" data-profile href="#" target="_blank" rel="noopener">Профиль на Janitor AI ↗</a>
+  </div>
+
+  <section class="block">
+    <div class="sh"><span class="num">§ 00.1</span><h2>Коротко о мире</h2></div>
+    <div class="grid g3">
+      <div class="card hl"><div class="tag"><span class="mono k">Разум</span><span class="mono">01</span></div><p>Психологически деми не отличаются от людей: человеческое мышление, эмпатия, воображение. Животные инстинкты почти исчезли и остались лишь в немногих закрытых общинах.</p></div>
+      <div class="card hl"><div class="tag"><span class="mono k">Две формы</span><span class="mono">02</span></div><p>Деми может быть человеком или животным и меняет форму по желанию, но не чаще чем раз в четыре часа и только сосредоточившись. Естественная форма — человеческая.</p></div>
+      <div class="card hl"><div class="tag"><span class="mono k">Внешность</span><span class="mono">03</span></div><p>Животное неотличимо от обычного зверя. В человеческой форме у деми остаётся 2–3 животные черты и 1–2 чуть усиленные способности вида.</p></div>
+      <div class="card hl"><div class="tag"><span class="mono k">Развитие</span><span class="mono">04</span></div><p>Тело взрослеет в темпе текущей формы, и это касается обеих форм. Год в облике кота сделает деми подростком, десять лет — человеком 55–60 лет.</p></div>
+      <div class="card hl"><div class="tag"><span class="mono k">Потомство</span><span class="mono">05</span></div><p>Дети возможны только у деми одного вида или у пары деми и человека. Рождаются в человеческой форме, превращаться начинают в 3–5 лет.</p></div>
+      <div class="card hl"><div class="tag"><span class="mono k">Сегодня</span><span class="mono">06</span></div><p>Формально деми почти равны людям, но носят лишние документы и чип. Подпольная торговля деми процветает, а сами деми держатся вместе.</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="sh"><span class="num">§ 00.2</span><h2>Разделы архива</h2></div>
+    <div class="grid g4">
+      <button class="go" data-go="history"><div class="im"><img src="img/history.jpg" alt="" loading="lazy"></div><div class="tx"><span class="mono k">02 · X век — наши дни</span><h3>История</h3><p>От лесных племён и охоты на ведьм до борьбы за права.</p></div></button>
+      <button class="go" data-go="laws"><div class="im"><img src="img/laws.jpg" alt="" loading="lazy"></div><div class="tx"><span class="mono k">03 · FBDA и Meridian</span><h3>Законы</h3><p>Документы, чипы, реестр и исследования деми.</p></div></button>
+      <button class="go" data-go="society"><div class="im"><img src="img/society.jpg" alt="" loading="lazy"></div><div class="tx"><span class="mono k">04 · Среди людей</span><h3>Общество</h3><p>Предрассудки, быт и сообщества деми.</p></div></button>
+      <button class="go" data-go="species"><div class="im"><img src="img/species.jpg" alt="" loading="lazy"></div><div class="tx"><span class="mono k">05 · Каталог</span><h3>Виды</h3><p>Кем бывают деми и почему одни виды реже других.</p></div></button>
+      <button class="go" data-go="ark"><div class="im"><img src="img/ark.jpg" alt="" loading="lazy"></div><div class="tx"><span class="mono k">06 · Подполье</span><h3>«Ковчег»</h3><p>Крупнейшая в мире сеть торговли деми.</p></div></button>
+      <button class="go" data-go="people"><div class="im"><img src="img/noah.jpg" alt="" loading="lazy" style="object-position:center 25%"></div><div class="tx"><span class="mono k">07 · Досье</span><h3>Персонажи</h3><p>Ключевые фигуры мира и жители Майами.</p></div></button>
+      <button class="go" data-go="miami"><div class="im"><img src="img/miami.jpg" alt="" loading="lazy"></div><div class="tx"><span class="mono k">08 · Город</span><h3>Майами</h3><p>Районы, Эль-Нидо, бар, клиника и полиция.</p></div></button>
+      <button class="go" data-go="bots"><div class="im"><img src="img/cassian.jpg" alt="" loading="lazy" style="object-position:center 20%"></div><div class="tx"><span class="mono k">09 · Janitor AI</span><h3>Боты</h3><p>Персонажи, с которыми можно поговорить.</p></div></button>
+    </div>
+  </section>
+</div>
+
+<!-- =============== 01 BASICS =============== -->
+<div class="view" id="v-basics">
+  <div class="banner plain br">
+    <div class="meta mono"><span>FILE 01 / BIOLOGY</span><span>Homo · demi</span></div>
+    <div class="title"><span class="mono">Природа деми</span><h1>Человек и зверь<br>в одном теле</h1></div>
+    <span class="rb big" aria-hidden="true"></span>
+  </div>
+  <p class="page-lead"><b>Деми-хьюман</b> — разумное человекоподобное существо, которое биологически унаследовало часть черт определённого животного вида. Деми развивались параллельно людям.</p>
+  <div class="subnav"></div>
+
+  <section class="block" data-title="Формы">
+    <div class="sh"><span class="num">§ 01.1</span><h2>Две формы</h2></div>
+    <div class="grid g2">
+      <div class="card"><div class="tag"><span class="mono k">Человеческая форма</span><span class="mono">основная</span></div><h3>Почти как человек</h3>
+        <ul class="clean">
+          <li>Обязательно 2–3 животные черты: уши, хвост, когти, клыки, крылья — в зависимости от вида.</li>
+          <li>Кожа без меха, зрачки обычные, человеческие. Необычным может быть только цвет глаз.</li>
+          <li>1–2 способности вида. Это не магия, а чуть усиленная человеческая возможность: острее обоняние или слух, немного больше силы или выносливости, лучше ночное зрение.</li>
+        </ul>
+      </div>
+      <div class="card"><div class="tag"><span class="mono k">Животная форма</span><span class="mono">по желанию</span></div><h3>Неотличим от зверя</h3>
+        <ul class="clean">
+          <li>Деми полностью идентичен животному своего вида. Людям его почти невозможно отличить, разве что по осмысленному взгляду или пониманию речи.</li>
+          <li>Разум, память и понимание речи сохраняются, а говорить нельзя: горло животного для этого не приспособлено.</li>
+          <li>Обычные животные сразу чувствуют в деми «не своего» и часто реагируют настороженно или агрессивно. Общаться с ними деми может только языком тела.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Развитие">
+    <div class="sh"><span class="num">§ 01.2</span><h2>Развитие и возраст</h2></div>
+    <div class="prose"><p>Деми рождаются в человеческой форме и растут как обычные люди. Если же деми предпочитает животную форму, он развивается быстрее — со скоростью своего вида. Обе формы связаны: время, прожитое в одной, «старит» и другую.</p></div>
+    <div class="readouts" style="margin:20px 0 16px">
+      <div class="ro"><span class="mono">1 год котом</span><b>≈ 15 лет</b><span>после превращения деми развит как подросток</span></div>
+      <div class="ro"><span class="mono">10 лет котом</span><b>≈ 55–60</b><span>человеческих лет по телу и эмоциям</span></div>
+      <div class="ro"><span class="mono">Вывод</span><b>Дольше</b><span>жизнь в человеческой форме длиннее</span></div>
+    </div>
+    <div class="grid g2">
+      <div class="card"><h3>Инстинкты</h3><p>Почти у всех ныне живущих деми их нет. Инстинкты сохранились лишь в общинах, которые давно отделились от людей и других деми: в изоляции эволюция замедлилась.</p></div>
+      <div class="card"><h3>Здоровье</h3><p>Деми болеют и человеческими болезнями, и болезнями своего вида. Поэтому их лечат и врачи, и ветеринары — в зависимости от болезни.</p></div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Потомство">
+    <div class="sh"><span class="num">§ 01.3</span><h2>Размножение и наследование</h2></div>
+    <div class="grid g2">
+      <div class="card"><span class="mono k">Деми + деми одного вида</span><h3>Всегда деми того же вида</h3><p>Разные виды потомства не дают, поэтому виды не смешиваются. Деми-волчица может забеременеть только от деми-волка, но никогда — от деми-пса.</p></div>
+      <div class="card"><span class="mono k">Деми + человек</span><h3>Результат менее предсказуем</h3>
+        <div class="ratio" role="img" aria-label="63 процента деми, 37 процентов человек"><div class="a">деми 63%</div><div class="b">человек 37%</div></div>
+        <p>Не важно, кто в паре мужчина, а кто женщина: вероятность та же. Ребёнок-деми будет того же вида, что и родитель-деми.</p></div>
+    </div>
+    <p class="note" style="margin-top:14px">Зачатие возможно <b>только в человеческой форме</b>.</p>
+  </section>
+
+  <section class="block" data-title="Превращение">
+    <div class="sh"><span class="num">§ 01.4</span><h2>Механика превращения</h2></div>
+    <div class="steps">
+      <div class="step"><b>10–30 сек</b><p>Столько длится превращение, в зависимости от разницы в размерах форм.</p></div>
+      <div class="step"><b>Ощущения</b><p>Не больно, но неприятно: сильная ломота, будто тянут во все стороны. После — усталость и голод.</p></div>
+      <div class="step"><b>Масса</b><p>Не сохраняется: 70-килограммовый деми-волк в облике волка весит как обычный волк. Куда она девается, учёные не знают.</p></div>
+      <div class="step"><b>Одежда</b><p>Не меняется вместе с телом и спадает. Поэтому деми носят свободную одежду, а для них шьют вещи с прорезями.</p></div>
+      <div class="step"><b>Чип</b><p>Смещается: у человека он между ключицами, у животного — на холке.</p></div>
+    </div>
+    <div class="grid g3" style="margin-top:16px">
+      <div class="card"><h3>Ограничения</h3>
+        <ul class="clean">
+          <li>Между превращениями не меньше четырёх часов. До этого вернуться в прежнюю форму нельзя.</li>
+          <li>Травмы одной формы в равной мере переносятся на другую.</li>
+          <li>Превращение требует концентрации: в сильном волнении, от боли или с помутнённым рассудком оно не получится.</li>
+        </ul>
+      </div>
+      <div class="card"><h3>Первое превращение</h3>
+        <ul class="clean">
+          <li>Случается в 3–5 лет, почти всегда само собой: во сне, в тепле, в полном покое.</li>
+          <li>Управлять им ребёнок учится с помощью родителей, и к 7–10 годам большинство меняет форму осознанно.</li>
+          <li>Родители следят, чтобы ребёнок не засиживался в животной форме: несколько месяцев в облике котёнка или щенка могут «отнять» годы детства.</li>
+        </ul>
+      </div>
+      <div class="card"><h3>Особые случаи</h3>
+        <ul class="clean">
+          <li>Беременным превращаться крайне опасно: в животной форме плод может погибнуть, и врачи запрещают это на всём сроке.</li>
+          <li>Алкоголь, сильные лекарства и наркотики мешают сосредоточиться, и превратиться очень трудно.</li>
+          <li>Кто месяцами и годами живёт зверем, перенимает привычки вида. Это не инстинкты, но вернуться к человеческой жизни таким деми трудно.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- =============== 02 HISTORY =============== -->
+<div class="view" id="v-history">
+  <div class="banner br">
+    <img src="img/history.jpg" alt="">
+    <div class="meta mono"><span>FILE 02 / HISTORY</span><span>X — XXI</span></div>
+    <div class="title"><span class="mono">История</span><h1>Тысяча лет в тени</h1></div>
+  </div>
+  <p class="page-lead">Поначалу люди не догадывались, что деми разумны, и принимали их за странных животных-мутантов: тогда звериные черты были выражены гораздо сильнее. Деми жили стаями или поодиночке в лесах, полях и пустынях.</p>
+
+  <div class="timeline" style="margin-top:36px">
+    <div class="era">
+      <div class="when">X–XI века</div>
+      <h3>Рождение культуры</h3>
+      <p>У деми окончательно сформировалось человеческое мышление, появились культура, мораль и законы. Они объединялись в племена — сначала родственные виды, «хищники» или «жертвы», чтобы легче выжить.</p>
+      <p>Самые смелые выходили исследовать мир и встречали людей. Кто-то учил деми ремёслам и грамоте, кто-то бежал в церковь, кто-то нападал. Благодаря спокойным людям племена превратились в настоящие скрытые поселения.</p>
+    </div>
+    <div class="era dark">
+      <div class="when">XII–XIV века</div>
+      <h3>Вырубка лесов и чума</h3>
+      <p>Людей становилось больше, леса вырубали под пашни, и поселения деми стало легко найти. Начались мелкие «войны»: люди находили странные дома и нападали ночью.</p>
+      <p>Чума середины XIV века дала передышку — опустевшие земли снова зарастали лесом. Но во многих местах в море обвиняли именно деми, и нападения стали ещё жёстче.</p>
+    </div>
+    <div class="era">
+      <div class="when">XV–XVI века</div>
+      <h3>Выход к людям</h3>
+      <p>Деми поняли, что вечно прятаться не выйдет, и стали отправлять в города замаскированных разведчиков. Те возвращались и учили остальных: оружию, экономике, религиям, грамоте.</p>
+      <p>Тогда же выяснилось, что пара деми и человека тоже может иметь детей. Для народа, потерявшего к XVI веку около 20% численности, это стало и спасением, и проклятием. Самые оптимистичные племена пытались договориться с людьми, но в эпоху религиозных войн их чаще всего считали демонами.</p>
+      <span class="loss">−20% к XVI веку · затем ещё −5%</span>
+    </div>
+    <div class="era dark">
+      <div class="when">Конец XVI — середина XVII века</div>
+      <h3>Охота на ведьм</h3>
+      <p>Самое тёмное время. Деми ловили и казнили на кострах и виселицах вместе с людьми, обвинёнными в колдовстве. После этого деми решили больше не искать мира с людьми: каждая попытка заканчивалась резнёй.</p>
+    </div>
+    <div class="era">
+      <div class="when">XVIII–XIX века</div>
+      <h3>От демонов к загадке</h3>
+      <p>Охота на ведьм сошла на нет, влияние церкви ослабло, суеверия уступили науке. В XIX веке учёные признали деми отдельным видом, развивавшимся параллельно людям. Начался хрупкий мир — или его подобие.</p>
+    </div>
+    <div class="era dark">
+      <div class="when">XX век</div>
+      <h3>Войны и права</h3>
+      <p>Идеи о «чистоте» и «неполноценности» снова сделали деми мишенью, и в годы мировых войн они пострадали от преследований. Но именно после этого мир всерьёз заговорил о правах — в том числе о правах деми.</p>
+    </div>
+    <div class="era">
+      <div class="when">Сегодня</div>
+      <h3>Хрупкий мир</h3>
+      <p>Иерархия всё ещё очевидна, но деми могут жить в городах, не боясь, что их семью вырежут. Теперь они отстаивают свои права и мечтают о равенстве.</p>
+    </div>
+  </div>
+</div>
+
+<!-- =============== 03 LAWS =============== -->
+<div class="view" id="v-laws">
+  <div class="banner br">
+    <img src="img/laws.jpg" alt="">
+    <div class="meta mono"><span>FILE 03 / LAW</span><span>FBDA · Meridian</span></div>
+    <div class="title"><span class="mono">Законы</span><h1>Почти равные</h1></div>
+  </div>
+  <p class="page-lead">На бумаге у деми большинство человеческих прав. Но люди всё ещё видят в них скорее животных, и в законах остались исключения.</p>
+  <div class="subnav"></div>
+
+  <section class="block" data-title="Основа">
+    <div class="sh"><span class="num">§ 03.1</span><h2>Что отличает деми по закону</h2></div>
+    <div class="grid g3">
+      <div class="card"><h3>Спорт</h3><p>Запрещено соревноваться наравне с людьми из-за возможного физического превосходства.</p></div>
+      <div class="card"><h3>Два лишних документа</h3><p>Помимо обычного удостоверения деми обязан всегда носить с собой паспорт деми-хьюмана и ветеринарный паспорт.</p></div>
+      <div class="card"><h3>Чип</h3><p>Каждому деми при рождении вживляют чип между ключицами. Власти говорят, что это помогает отслеживать преступников. Сертификат хранится в ветпаспорте.</p></div>
+      <div class="card"><h3>Мелкие нормы</h3><p>Отдельные очереди в некоторых учреждениях и запрет на вход туда, где есть животные, — чтобы те не реагировали непредсказуемо.</p></div>
+      <div class="card"><h3>Защита</h3><p>Запрет на дискриминацию и травлю, на торговлю деми и «владение» ими продублирован отдельно — наравне с людьми.</p></div>
+      <div class="card"><h3>Негласное</h3><p>Закон этого не запрещает, но ни один деми ещё ни разу не занимал высокую руководящую или правительственную должность.</p></div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Документы">
+    <div class="sh"><span class="num">§ 03.2</span><h2>Документы деми</h2></div>
+    <p class="page-lead" style="margin-top:0;margin-bottom:20px">Каждый деми обязан всегда носить с собой три документа. Без них при любой проверке его забирают в участок «до выяснения личности».</p>
+    <div class="grid g3">
+      <div class="card hl"><div class="tag"><span class="mono k">Документ 1 · FBDA</span><span class="mono">5 лет</span></div><h3>Паспорт деми-хьюмана</h3>
+        <p>Небольшая пластиковая карта, похожая на водительские права.</p>
+        <ul class="clean">
+          <li>Фото в обеих формах — человеческой и животной.</li>
+          <li>Имя, фамилия, дата рождения, вид и порода.</li>
+          <li>Внешние отличительные черты: окрас, уши, хвост, крылья.</li>
+          <li>Номер чипа, номер удостоверения и номер ветпаспорта.</li>
+          <li>Даты выдачи и окончания срока.</li>
+          <li>В углу — печать посмертного согласия «demi research is permitted». Её ставят по умолчанию, и большинство деми даже не знают, что она у них есть.</li>
+        </ul>
+      </div>
+      <div class="card hl"><div class="tag"><span class="mono k">Документ 2 · ветклиника</span><span class="mono">5 лет</span></div><h3>Ветеринарный паспорт</h3>
+        <p>Книжечка, которую заполняют от руки в аккредитованной ветклинике после полного осмотра в животной форме.</p>
+        <ul class="clean">
+          <li>«Описание животного / деми»: фото в животной форме, имя, вид, порода, пол, дата рождения, окрас.</li>
+          <li>«Идентификация»: наклейка со штрихкодом номера чипа и дата чипирования.</li>
+          <li>Графы для номера и даты татуировки — для животных с клеймом.</li>
+          <li>Номер паспорта деми.</li>
+          <li>Отметки о прививках и сертификат о чипировании.</li>
+          <li>Перед любой новой записью личность обязаны сверить.</li>
+        </ul>
+      </div>
+      <div class="card hl"><div class="tag"><span class="mono k">Документ 3 · штат</span><span class="mono">5 лет</span></div><h3>Удостоверение личности</h3>
+        <p>Обычное удостоверение штата — такое же, как у людей.</p>
+        <ul class="clean">
+          <li>Фото, имя и фамилия, подпись.</li>
+          <li>Адрес, дата рождения, пол и рост.</li>
+          <li>Номер удостоверения и даты выдачи и окончания.</li>
+          <li>У людей во Флориде оно действует 8 лет, а у деми — только 5, вместе с остальными документами.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" data-title="FBDA">
+    <div class="sh"><span class="num">§ 03.3</span><h2>FBDA</h2></div>
+    <div class="prose">
+      <p><b>Федеральное бюро по делам деми-хьюманов</b> (Federal Bureau of Demi-Human Affairs) отвечает в США за всё, что касается деми: выдаёт паспорта и ветпаспорта, ведёт федеральный реестр чипов, аккредитует ветклиники и принимает жалобы. Отделения есть в каждом крупном городе, и все они известны бесконечными очередями и потерянными бумагами.</p>
+      <p>Бюро возглавляет <a href="#npc-kessler">Харольд Кесслер</a>. Его идея — «безопасность через учёт»: деми не опасны, пока о каждом известно всё. Публично он говорит о «защите деми», и его считают умеренным чиновником, хотя каждая реформа добавляет деми очередей, пошлин и поводов для задержания. Сейчас он продвигает ежегодную перерегистрацию места жительства.</p>
+    </div>
+    <div class="grid g3" style="margin-top:18px">
+      <div class="card hl"><span class="mono k">Раз в 5 лет</span><h3>Продление документов</h3><p>Ветосмотр в аккредитованной клинике, пошлина и очередь в FBDA. Просрочка — штраф, а при проверке полицией — задержание «до выяснения личности», иногда на дни.</p></div>
+      <div class="card hl"><span class="mono k">По умолчанию</span><h3>Посмертное согласие</h3><p>При первом оформлении в документы ставится печать «demi research is permitted» — согласие отдать тело науке. Отказ: нотариальное заявление, пошлина и месяцы ожидания. Невостребованные тела почти всегда уходят в лаборатории.</p></div>
+      <div class="card hl"><span class="mono k">Федеральный</span><h3>Реестр чипов</h3><p>Каждый чип привязан к записи. Деми без чипа или с чипом не из реестра считается «неустановленным» и подлежит задержанию. Иногда записи просто «теряются».</p></div>
+    </div>
+    <div class="spoiler" style="margin-top:14px"><div class="sp-body"><p>У «Ковчега» есть свои люди в бюро. Они помечают похищенных деми как «умерших» или «выехавших из страны» или просто удаляют их из базы. Поэтому пропавших деми почти никто не ищет.</p></div></div>
+  </section>
+
+  <section class="block" data-title="Meridian">
+    <div class="sh"><span class="num">§ 03.4</span><h2>Meridian Life Sciences</h2></div>
+    <div class="prose">
+      <p>Крупнейшая в стране корпорация по изучению деми со штаб-квартирой в Нью-Йорке. Официально разрабатывает лекарства и вакцины, изучает превращение и развитие в двух формах. Несколько исследовательских центров, свои клиники, щедрые государственные гранты. Компания гордится тем, что «делает жизнь деми безопаснее», и правда выпускает лекарства, которыми пользуется вся страна.</p>
+      <p>Возглавляет её <a href="#npc-laurent">доктор Иветт Лоран</a>.</p>
+    </div>
+    <h3 style="margin:22px 0 12px">На чём держится работа</h3>
+    <div class="grid g3">
+      <div class="card"><span class="mono k">Источник 1</span><h3>Платные добровольцы</h3><p>Деми, которые идут в исследования от бедности. Длинные запутанные договоры, экономия на содержании, затянутые выплаты. Кто выходит досрочно, не получает ничего.</p></div>
+      <div class="card"><span class="mono k">Источник 2</span><h3>Тела</h3><p>Благодаря посмертному согласию «по умолчанию» компания получает почти всех умерших деми, которых не забрали родственники.</p></div>
+      <div class="spoiler"><div class="sp-body"><span class="mono" style="color:var(--secret)">Источник 3</span><h3>«Неудачные лоты»</h3><p>Деми, которых «Ковчег» не смог продать, попадают в закрытое отделение Meridian, где их нет ни в одном реестре.</p></div></div>
+    </div>
+    <div class="spoiler" style="margin-top:14px"><div class="sp-body">
+      <h3>Проект «Порог» (Threshold)</h3>
+      <p>Главная тайна компании и детище Иветт Лоран. Учёные пытаются понять, куда «исчезает» масса при превращении, и научиться управлять превращением извне: заставлять деми менять форму или запирать их в одной из форм. Для опасных опытов законные добровольцы не годятся, поэтому Meridian нуждается в «Ковчеге» не меньше, чем «Ковчег» в ней.</p>
+    </div></div>
+  </section>
+</div>
+
+<!-- =============== 04 SOCIETY =============== -->
+<div class="view" id="v-society">
+  <div class="banner br">
+    <img src="img/society.jpg" alt="">
+    <div class="meta mono"><span>FILE 04 / SOCIETY</span><span>no demi allowed</span></div>
+    <div class="title"><span class="mono">Общество</span><h1>Умные питомцы</h1></div>
+  </div>
+  <p class="page-lead">Законы в целом уравнивают деми и людей, а общество — нет. Деми боятся, недолюбливают и считают кем-то вроде умных домашних животных.</p>
+  <div class="subnav"></div>
+
+  <section class="block" data-title="Враги">
+    <div class="sh"><span class="num">§ 04.1</span><h2>Враги деми</h2></div>
+    <div class="grid g2">
+      <div class="card red"><div class="tag"><span class="mono">Подполье</span><span class="mono">trade</span></div><h3>Торговцы и коллекционеры</h3><p>Множество подпольных организаций продают деми. Коллекционеры покупают редкие виды на аукционах за огромные деньги и держат деми как фамильяров, любовников или прислугу. Это карается наравне с торговлей людьми, но полиция берётся за такие дела неохотно, а влиятельные покупатели легко всё заминают. Самая крупная сеть — <a href="#ark">«Ковчег»</a>: о нём все слышали, но толком никто ничего не знает.</p></div>
+      <div class="card red"><div class="tag"><span class="mono">Политика</span><span class="mono">senate</span></div><h3>Сенатор Роджер Брэддок</h3><p>Самый известный противник прав деми. Называет их «существами», опасными своей непредсказуемостью. Его главный проект — «Закон о безопасности от деми»: GPS-чипы вместо обычных, запрет работать с детьми, в медицине и полиции, право владельцев жилья отказывать деми без объяснений. Каждую атаку радикалов превращает в телешоу, правозащитников зовёт «адвокатами зверей». Его кампании щедро спонсирует Meridian. Ходят слухи, что он сам один из «Хранителей» «Ковчега». <a href="#npc-braddock">Досье</a></p></div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Быт">
+    <div class="sh"><span class="num">§ 04.2</span><h2>С чем деми сталкиваются каждый день</h2></div>
+    <div class="grid g3">
+      <div class="card"><h3>Наклейки</h3><p>На дверях рядом с «no animals» висит «no demi». Это дискриминация — пока владелец не сошлётся на «шерсть в еде». Тогда закон пожимает плечами и предлагает пообедать в другом месте.</p></div>
+      <div class="card"><h3>Туалеты</h3><p>Некоторые торговые центры вводят четвёртый туалет: женский, мужской, для людей с инвалидностью и для деми.</p></div>
+      <div class="card"><h3>Деньги</h3><p>Повышенные налоги и расходы на дополнительные документы.</p></div>
+      <div class="card"><h3>Стеклянный потолок</h3><p>Официальных запретов нет, но подняться высоко по карьерной лестнице деми почти невозможно.</p></div>
+      <div class="card"><h3>Исследования</h3><p>На бумаге лаборатории соблюдают Нюрнбергский кодекс. На деле деми идут туда от безденежья, а нарушения оправдывают тем, что кодекс говорит о людях, а деми — отдельный вид. После исследований часто остаются травмы, чаще психологические.</p></div>
+      <div class="card"><h3>Горячая картошка</h3><p>Врачи отправляют деми к ветеринарам, ветеринары — обратно. Одни инстанции отсылают к другим, и так по кругу. Даже пожаловаться на нарушение очень трудно.</p></div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Сообщества">
+    <div class="sh"><span class="num">§ 04.3</span><h2>Сообщества деми</h2></div>
+    <p class="page-lead" style="margin:0 0 18px">В одиночку выжить в человеческом мире труднее, поэтому деми держатся вместе.</p>
+    <div class="grid g2">
+      <div class="card"><h3>Кварталы деми</h3><p>Районы, где деми живут плотнее всего: заведения без запрещающих наклеек, магазины одежды для деми, врачи, которые не отправляют к ветеринару. Люди зовут их от нейтрального «деми-квартал» до презрительного «зоопарк». В Майами это <a href="#miami">Эль-Нидо</a>.</p></div>
+      <div class="card"><h3>Видовые общины (кланы)</h3><p>Деми одного вида объединяются, чтобы найти пару, сохранить традиции и помогать своим. Старое деление на «хищников» и «жертв» живо до сих пор: деми-кролику вряд ли спокойно рядом с деми-волком.</p></div>
+      <div class="card"><h3>Закрытые общины</h3><p>Поселения, которые так и не вышли к людям после XVII века. Живут в глуши, хранят старые традиции, не признают человеческих законов, и только у них сохранились инстинкты. Одни городские деми их уважают, другие считают «дикарями».</p></div>
+      <div class="card"><h3>Сети взаимопомощи</h3><p>Неофициальные: через знакомых узнают, к какому врачу идти, какой работодатель не дискриминирует, кто сдаст квартиру. Сюда же относятся тайные убежища для сбежавших от коллекционеров и из лабораторий.</p></div>
+    </div>
+    <div class="grid g2" style="margin-top:14px">
+      <div class="card hl"><div class="tag"><span class="mono k">Правозащитники</span><span class="mono">legal</span></div><h3>«Без клеток»</h3><p>Одно из самых известных движений США, во главе — деми-рысь <a href="#npc-amara">Амара Окафор</a>. Только законные методы: суды, петиции, митинги, журналистские расследования. Цели: отменить лишние документы и налоги, исправить Нюрнбергский кодекс, отменить посмертное согласие «по умолчанию» и расследовать исчезновения деми. Есть горячая линия, бесплатные юристы и много волонтёров-людей.</p></div>
+      <div class="card red"><div class="tag"><span class="mono">Радикалы</span><span class="mono">the feral</span></div><h3>«Одичавшие»</h3><p>Немногочисленные, но громкие. Лидер — деми-волк <a href="#npc-cyrus">Сайрус Кейн</a>, бывший пленник «Ковчега». Разрозненные ячейки по всей стране поджигают склады, нападают на фургоны перевозчиков и лаборатории, освобождают пленников и мстят похитителям. Иногда страдают случайные люди, и каждый налёт Брэддок показывает в новостях как доказательство того, что деми опасны.</p></div>
+    </div>
+  </section>
+</div>
+
+<!-- =============== 05 SPECIES =============== -->
+<div class="view" id="v-species">
+  <div class="banner plain br">
+    <div class="meta mono"><span>FILE 05 / SPECIES CATALOGUE</span><span>Mammalia · Aves</span></div>
+    <div class="title"><span class="mono">Виды</span><h1>Кем бывают деми</h1></div>
+    <span class="rb big" aria-hidden="true"></span>
+  </div>
+  <p class="page-lead">Только теплокровные — млекопитающие и птицы. Деми-рептилий, рыб и насекомых не бывает. Размер животной формы — от небольших грызунов до медведя; деми-слонов и деми-китов не существует.</p>
+
+  <div class="plate br" style="margin-top:26px"><img src="img/species.jpg" alt="Таблица видов: лиса, заяц, ворон, волк, рысь, филин"></div>
+
+  <div class="rarity">
+    <div class="rar">
+      <div class="meter"><i class="f"></i><i></i><i></i></div>
+      <div class="tag" style="display:flex;justify-content:space-between"><h3>Распространённые</h3><span class="mono muted">class I</span></div>
+      <div class="chips"><span class="chip acc">кошки<em>Felis</em></span><span class="chip acc">собаки<em>Canis</em></span><span class="chip acc">лисы<em>Vulpes</em></span><span class="chip acc">кролики и зайцы<em>Lepus</em></span><span class="chip acc">врановые<em>Corvus</em></span><span class="chip acc">крысы<em>Rattus</em></span></div>
+      <p class="muted">Жили рядом с людьми или на открытых территориях и чаще выходили к ним.</p>
+    </div>
+    <div class="rar">
+      <div class="meter"><i class="f"></i><i class="f"></i><i></i></div>
+      <div class="tag" style="display:flex;justify-content:space-between"><h3>Редкие</h3><span class="mono muted">class II</span></div>
+      <div class="chips"><span class="chip acc">волки<em>Canis lupus</em></span><span class="chip acc">олени<em>Cervus</em></span><span class="chip acc">совы<em>Strix</em></span><span class="chip acc">хищные птицы<em>Accipitridae</em></span><span class="chip acc">рыси<em>Lynx</em></span><span class="chip acc">медведи<em>Ursus</em></span></div>
+      <p class="muted">Жили в труднодоступных местах или сильнее всех пострадали от преследований.</p>
+    </div>
+    <div class="rar r3">
+      <div class="meter"><i class="f"></i><i class="f"></i><i class="f"></i></div>
+      <div class="tag" style="display:flex;justify-content:space-between"><h3>Очень редкие</h3><span class="mono" style="color:var(--secret)">class III</span></div>
+      <div class="chips"><span class="chip sec">тигры<em>Panthera tigris</em></span><span class="chip sec">снежные барсы<em>Panthera uncia</em></span><span class="chip sec">экзотические птицы</span></div>
+      <p class="muted">Единицы на страну. За ними охотятся коллекционеры, на подпольных аукционах это самые дорогие лоты.</p>
+    </div>
+  </div>
+
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card"><span class="mono k">Aves</span><h3>Крылья, которые не летают</h3><p>В человеческой форме у деми-птиц остаются крылья, но человеческое тело слишком тяжёлое для полёта. Летают они только в облике птицы. Крылья деми-птиц — навязчивая страсть некоторых коллекционеров.</p></div>
+    <div class="card"><span class="mono k">Знакомые лица</span><h3>Виды персонажей</h3>
+      <div class="chips"><a class="chip acc" href="#npc-amara">рысь · Амара Окафор</a><a class="chip acc" href="#npc-cyrus">волк · Сайрус Кейн</a><a class="chip acc" href="#npc-nico">кролик · Нико Мендоса</a><a class="chip acc" href="#npc-cassian">кот · Кассиан</a><a class="chip acc" href="#npc-owen">пёс · Оуэн Делакруа</a><span class="chip sp">ворон · Адриан Вэйл</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =============== 06 ARK =============== -->
+<div class="view" id="v-ark">
+  <div class="banner br">
+    <img src="img/ark.jpg" alt="">
+    <div class="meta mono"><span>FILE 06 / THE ARK</span><span>status: urban legend</span></div>
+    <div class="title"><span class="mono">Подполье</span><h1>«Ковчег»</h1></div>
+  </div>
+  <p class="page-lead">Крупнейшая в мире подпольная сеть торговли деми (англ. the Ark). Действует в десятках стран, официально её не существует. Полиция считает «Ковчег» городской легендой.</p>
+  <div class="subnav"></div>
+
+  <section class="block" data-title="Фонд">
+    <div class="sh"><span class="num">§ 06.1</span><h2>The Ark Foundation</h2></div>
+    <div class="ark-top">
+      <div class="logo-box br">
+        <img src="img/ark-logo.webp" alt="Логотип фонда The Ark Foundation">
+        <span class="mono muted">«Каждое существо заслуживает гавани»</span>
+      </div>
+      <div class="prose">
+        <p>«The Ark Foundation for Species Preservation» — настоящий благотворительный фонд. Его заповедники, приюты, ветклиники и программы перевозки редких животных действительно работают, а большинство сотрудников — честные люди.</p>
+        <p>Президент фонда — <a href="#npc-leonora">Леонора Стерлинг</a>. Её принцип: «каждое существо заслуживает гавани». Главная гордость — бесплатные осмотры для деми. Леонора добивается, чтобы клиники фонда получали аккредитацию FBDA и делали осмотры для продления документов. О деми она говорит с тем же умилением, что и о спасённых котятах, и не замечает, насколько это снисходительно.</p>
+        <p>Логотип — ковчег-лодочка на трёх волнах под оливковой ветвью, в бирюзово-золотых тонах. Выглядит добрым и безобидным.</p>
+        <div class="spoiler"><div class="sp-body"><p>Именно внутри этого фонда и прячется «Ковчег». Леонора ничего не знает о подполье. Фонд тайно финансирует и направляет Ной — для всех он лишь щедрый анонимный меценат. Когда кто-то подозревает фонд, Леонора принимает это как личную обиду и первой встаёт на его защиту.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Устройство">
+    <div class="sh"><span class="num">§ 06.2</span><h2>Как устроена сеть</h2></div>
+    <p class="page-lead" style="margin:0 0 16px">В США у «Ковчега» три главных центра: Нью-Йорк, Лос-Анджелес и <a href="#miami">Майами</a>. Каждый участник знает только свою часть работы.</p>
+    <div class="roles">
+      <div class="role"><span class="mono">Catchers</span><h3>«Ловцы»</h3><p>Находят и похищают деми: одиночек, бездомных, тех, кого никто не станет искать. Иногда выкупают их долги или заманивают «предложениями о работе».</p></div>
+      <div class="role"><span class="mono">Keepers</span><h3>«Смотрители»</h3><p>Держат пленников и «готовят» к продаже. Первым делом извлекают чип и подменяют документы.</p></div>
+      <div class="role"><span class="mono">Guardians</span><h3>«Хранители»</h3><p>Покупатели: богатые коллекционеры, политики, бизнесмены. В их круг попадают только по рекомендации.</p></div>
+      <div class="role"><span class="mono">Head</span><h3>Ной</h3><p>Глава организации неизвестен. Свои называют его Ной.</p></div>
+    </div>
+    <div class="spoiler" style="margin-top:14px"><div class="sp-body">
+      <h3>Схема внутри фонда</h3>
+      <ul class="clean">
+        <li>В бесплатных ветклиниках присматривают одиноких деми, которых никто не будет искать.</li>
+        <li>В закрытых приютах и «карантинных центрах» держат пленников.</li>
+        <li>Через официальные перевозки животных вывозят деми в животной форме по документам на обычных зверей.</li>
+        <li>Покупатели платят крупными «пожертвованиями» фонду, и деньги уходят «своим» через выдуманные расходы.</li>
+      </ul>
+    </div></div>
+  </section>
+
+  <section class="block" data-title="Выставки">
+    <div class="sh"><span class="num">§ 06.3</span><h2>Аукционы — «Выставки»</h2></div>
+    <div class="grid g2">
+      <div class="card"><p style="color:var(--ink)">Раз в несколько месяцев «Ковчег» проводит закрытые торги в частных поместьях или на яхтах в нейтральных водах. Гости приходят в масках. Лоты описывают как животных: вид, окрас, «темперамент», «послушание».</p></div>
+      <div class="card"><h3>Дороже всего ценятся</h3><div class="chips"><span class="chip sec">очень редкие виды</span><span class="chip sec">деми-птицы с красивыми крыльями</span><span class="chip sec">полностью «подготовленные»</span></div></div>
+    </div>
+    <p class="note" style="margin-top:14px"><b>Неприкасаемость.</b> Среди «Хранителей» есть влиятельные люди, поэтому расследования разваливаются: улики пропадают, свидетели отказываются от показаний.</p>
+  </section>
+
+  <section class="block" data-title="Метка">
+    <div class="sh"><span class="num">§ 06.4</span><h2>Метка</h2></div>
+    <div class="mark-row">
+      <div class="mark-box br"><span class="mark" aria-label="Метка Ковчега" role="img"></span><span class="mono muted">≈ 1,5 см · чёрная тушь</span></div>
+      <div class="prose">
+        <p>Деми, прошедших через «Ковчег», метят маленькой татуировкой или клеймом в виде лодочки — обычно за ухом, иногда на внутренней стороне запястья.</p>
+        <p>Это упрощённый контур логотипа: только корпус и три линии волн, без ветви и надписи. Посторонний примет её за обычную маленькую татуировку. Свои узнают сразу. А кто однажды видел логотип фонда, рано или поздно заметит, что это один и тот же рисунок.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- =============== 07 PEOPLE =============== -->
+<div class="view" id="v-people">
+  <div class="banner plain br">
+    <div class="meta mono"><span>FILE 07 / PERSONAE</span><span>18 records</span></div>
+    <div class="title"><span class="mono">Персонажи</span><h1>Кто есть кто</h1></div>
+    <span class="rb big" aria-hidden="true"></span>
+  </div>
+  <p class="page-lead">Нажми на карточку, чтобы открыть досье. Тайные роли и секреты спрятаны под спойлерами.</p>
+  <div class="filter" role="group" aria-label="Фильтр персонажей">
+    <button data-f="all" aria-pressed="true">Все</button>
+    <button data-f="world" aria-pressed="false">Мир</button>
+    <button data-f="miami" aria-pressed="false">Майами</button>
+    <button data-f="demi" aria-pressed="false">Только деми</button>
+  </div>
+  <div id="peopleWrap"></div>
+</div>
+
+<!-- =============== 08 MIAMI =============== -->
+<div class="view" id="v-miami">
+  <div class="banner br">
+    <img src="img/miami.jpg" alt="">
+    <div class="meta mono"><span>FILE 08 / MIAMI, FL</span><span>25.77° N · 80.19° W</span></div>
+    <div class="title"><span class="mono">Город</span><h1>Майами</h1></div>
+  </div>
+  <p class="page-lead">Огромный, шумный, жаркий город на юго-востоке Флориды. Стеклянные небоскрёбы и яхты миллионеров соседствуют с дешёвыми многоэтажками, где живут от зарплаты до зарплаты. Туристы, вечеринки, деньги — и много мест, где можно бесследно исчезнуть.</p>
+  <div class="subnav"></div>
+
+  <section class="block" data-title="Город">
+    <div class="sh"><span class="num">§ 08.1</span><h2>Город</h2></div>
+    <div class="readouts" style="margin:0">
+      <div class="ro"><span class="mono">Климат</span><span style="color:var(--ink)">Влажная жара круглый год. Летом почти каждый день после обеда тропические ливни, с июня по ноябрь — сезон ураганов.</span></div>
+      <div class="ro"><span class="mono">Люди</span><span style="color:var(--ink)">Испанский звучит не реже английского. Город строили кубинцы, гаитяне, венесуэльцы, колумбийцы и десятки других общин.</span></div>
+      <div class="ro"><span class="mono">Ворота мира</span><span style="color:var(--ink)">Один из крупнейших круизных портов мира и огромный аэропорт.</span></div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Районы">
+    <div class="sh"><span class="num">§ 08.2</span><h2>Районы</h2></div>
+    <div class="map-wrap">
+      <div class="map br">
+        <svg viewBox="0 0 600 700" role="img" aria-label="Схема районов Майами">
+          <rect class="water" x="0" y="0" width="600" height="700"/>
+          <g id="gridLines"></g>
+          <path class="land" d="M0 0 H405 Q398 120 402 210 Q404 300 388 360 Q372 420 350 470 Q330 540 300 600 Q280 650 270 700 H0Z"/>
+          <path class="glades" d="M0 470 Q90 450 160 520 Q200 560 230 700 H0Z"/>
+          <path class="land" d="M492 30 Q505 150 506 240 Q506 300 496 330 Q488 300 486 240 Q484 140 486 30Z"/>
+          <ellipse class="land" cx="445" cy="345" rx="10" ry="6"/>
+          <ellipse class="land" cx="462" cy="370" rx="12" ry="7"/>
+          <text class="small" x="430" y="200" transform="rotate(-88 430 200)">BISCAYNE BAY</text>
+          <text class="small" x="530" y="420">ATLANTIC</text>
+          <text class="small" x="30" y="560">EVERGLADES</text>
+          <path d="M318 30 V420" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="5 5" opacity=".6"/>
+          <text class="small" x="300" y="24">I-95</text>
+          <text class="small" x="14" y="690">SCHEMATIC · NOT TO SCALE</text>
+          <g id="mapDots"></g>
+        </svg>
+      </div>
+      <div class="card district" id="districtCard"></div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Эль-Нидо">
+    <div class="sh"><span class="num">§ 08.3</span><h2>Деми-квартал «Эль-Нидо»</h2></div>
+    <div class="grid g2">
+      <div class="prose">
+        <p>«Эль-Нидо» (исп. «гнездо») — неофициальный деми-квартал к северу от центра, зажатый между Аллапаттой, Винвудом и Литл-Хаити вдоль эстакад автострады I-95.</p>
+        <p>Несколько кварталов облупленных многоэтажек, бельё на балконах, уличный рынок, лавки одежды с прорезями для хвостов и крыльев, круглосуточная прачечная, бар «Ла Мадригера» и клиника «У Дока».</p>
+        <p>Здесь нет наклеек «no demi», соседи не смотрят косо, а новости и предупреждения разносятся быстрее, чем доходят до полиции. Люди из других районов зовут Эль-Нидо «Зоопарком».</p>
+      </div>
+      <div class="card"><span class="mono k">Отношение к деми в Майами</span>
+        <p style="color:var(--ink)">Флорида — консервативный штат, и местные законы жёстче федеральных: владелец жилья может отказать деми без объяснений, а в части школ дети-деми учатся в отдельных классах. Но сам город слишком пёстрый, чтобы ненавидеть кого-то одного, особенно в бедных районах.</p>
+        <ul class="clean">
+          <li>В Саут-Бич и Брикелле на дверях висят наклейки «no demi», охрана может спросить документы.</li>
+          <li>В богатых районах прислуга-деми в моде: о «своей» горничной-кошечке говорят как о породистой собаке.</li>
+          <li>Во время ураганов деми отправляют в укрытия «для людей с домашними животными».</li>
+          <li>Деми-беспризорники, особенно в животной форме, — обычное дело в бедных районах. Их пропажу почти никто не замечает.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Места">
+    <div class="sh"><span class="num">§ 08.4</span><h2>Места Эль-Нидо</h2></div>
+    <div class="grid g2">
+      <div class="place br"><div class="in">
+        <span class="mono k">Бар · исп. «нора»</span><h3>«Ла Мадригера»</h3>
+        <p>Маленький бар в сердце квартала, в старом доме с облезлой бирюзовой штукатуркой. Над входом неоновая вывеска с вислыми кроличьими ушами. Внутри тесно и шумно: жёлтые лампы, потёртые столы, музыкальный автомат с латиноамериканской музыкой, на стенах фото постоянных гостей в обеих формах. Пахнет жареными плантанами, ромом и кофе. Под стойкой всегда миски с водой для тех, кто зашёл зверем.</p>
+        <p>Бар открыла бабушка <a href="#npc-nico">Нико Мендосы</a>. Здесь узнают новости, ищут работу и жильё, оставляют записки, кормят в долг. Сюда приходят, когда кто-то пропал, — и здесь первыми узнают, что пропал кто-то ещё.</p>
+        <div class="spoiler"><div class="sp-body"><p>В подсобке и на втором этаже, где живёт Нико, есть комнаты. Там он прячет деми, сбежавших от коллекционеров, из лабораторий или от «Ковчега», пока Док их не подлатает и им не найдут, куда уехать. Знают только свои.</p></div></div>
+      </div></div>
+      <div class="place br"><div class="in">
+        <span class="mono k">Общественная клиника Эль-Нидо</span><h3>«У Дока»</h3>
+        <p>Бывшая аптека на углу через улицу от бара: облупленная вывеска, решётки на окнах, очередь на пластиковых стульях с утра. Внутри тесно, но чисто: два кабинета, старый рентген, переноски для пациентов-зверей.</p>
+        <p class="quote">«Здесь лечат всех. В обеих формах»</p>
+        <p>Клинику держит <a href="#npc-doc">Тобиас «Док» Олуволе</a>. Деми лечат и как людей, и как животных, без «горячей картошки». Бедным бесплатно, остальным — сколько смогут. Документы не спрашивают, принимают и без чипа. Живёт на пожертвования, помощь «Без клеток» и упрямство Дока.</p>
+        <p class="note">Клиника не аккредитована FBDA, поэтому осмотр для продления документов здесь не сделать. За ним приходится идти в аккредитованные клиники, например в «Ark Haven».</p>
+      </div></div>
+    </div>
+  </section>
+
+  <section class="block" data-title="Полиция">
+    <div class="sh"><span class="num">§ 08.5</span><h2>Полиция Майами</h2></div>
+    <div class="grid g2">
+      <div class="prose">
+        <p>Огромная, перегруженная и уставшая. Защищать деми она обязана наравне с людьми, но их дела всегда в конце очереди. Для многих полицейских деми — источник проблем: «Одичавшие», драки в Эль-Нидо, бродячие «животные», вечно не те документы.</p>
+        <p>Исключение — <a href="#npc-ray">детектив Рэй Сандовал</a> из отдела розыска пропавших. Он давно замечает, что деми исчезают слишком часто, слишком тихо и слишком похоже. Начальство советует «не тратить время», а он копает в одиночку.</p>
+      </div>
+      <div class="card"><ul class="clean">
+        <li>Деми без документов или с просроченным паспортом забирают «до выяснения личности», а оттуда могут передать в FBDA.</li>
+        <li>Заявления о пропаже деми принимают неохотно: «обернулся и сбежал», «загулял». Без семьи дело закрывают почти сразу.</li>
+        <li>«Офицер по связям с деми» — одна ставка на весь город, и обычно он разбирает жалобы на шум.</li>
+        <li>Туристические и богатые районы охраняют хорошо, Эль-Нидо — по остаточному принципу. Жители полиции не доверяют.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section class="block" data-title="«Ковчег»">
+    <div class="sh"><span class="num">§ 08.6</span><h2>«Ковчег» в Майами</h2></div>
+    <p class="page-lead" style="margin:0 0 16px">Один из трёх главных филиалов в США. Город идеален для торговли деми: порт и аэропорт, частные яхты, деньги, которые никто не проверяет, и тысячи людей, которых никто не ищет.</p>
+    <div class="grid g3">
+      <div class="spoiler"><div class="sp-body"><span class="mono" style="color:var(--secret)">Прикрытие · Дорал</span><h3>«Ark Haven»</h3><p>Ветклиника и приют для экзотических животных фонда рядом с аэропортом и складами. Светлое здание, клумбы, фото спасённых животных. Аккредитована FBDA: деми проходят здесь бесплатные осмотры. По карточкам пациентов «свои» выбирают одиноких деми, а «товар» вывозят как «экзотических животных на передержку». Большинство ветеринаров ни о чём не догадываются.</p></div></div>
+      <div class="spoiler"><div class="sp-body"><span class="mono" style="color:var(--secret)">Пленники · Хоумстед</span><h3>«Трюм» (the Hold)</h3><p>Официально — «карантинный центр» фонда на краю Эверглейдс: высокий забор, питомники, теплицы, на мили вокруг никого. Внутри вольеры, клетки, кафельные комнаты для «мытья» и кабинет, где извлекают чипы и ставят метки. Пахнет антисептиком и мокрой шерстью. Пленников «готовят» к «Выставке» неделями или месяцами.</p></div></div>
+      <div class="spoiler"><div class="sp-body"><span class="mono" style="color:var(--secret)">Аукционы · Коконат-Гроув</span><h3>Яхта «Завет» (the Covenant)</h3><p>Огромная белая яхта фонда для «благотворительных круизов» у частной пристани. Раз в несколько месяцев на ней проходят майамские «Выставки»: нейтральные воды, гости в масках, «лоты» в клетках в трюме.</p></div></div>
+    </div>
+    <div class="spoiler" style="margin-top:14px"><div class="sp-body">
+      <h3>Люди филиала</h3>
+      <ul class="clean">
+        <li><b>«Капитан» — Маргарет Холлоуэй</b>, глава филиала и директор «Ark Haven». Подчиняется напрямую Ною и единственная видит полную картину.</li>
+        <li><b>Доктор Сайлас Рид</b> — ветеринар «Ark Haven» и старший «Смотритель» «Трюма».</li>
+        <li><b>Уэйд Мерсер</b> — младший «Смотритель» «Трюма», подчиняется Риду.</li>
+        <li><b>Данте Руис</b> — один из лучших «Ловцов», работает в городской службе отлова бездомных животных.</li>
+        <li><b>Нора Беннет</b> — своя в отделении FBDA, стирает записи о похищенных деми из реестра.</li>
+      </ul>
+    </div></div>
+  </section>
+
+  <section class="block" data-title="Жители">
+    <div class="sh"><span class="num">§ 08.7</span><h2>Жители Майами</h2></div>
+    <div class="people" id="miamiPeople"></div>
+  </section>
+</div>
+
+<!-- =============== 09 BOTS =============== -->
+<div class="view" id="v-bots">
+  <div class="banner plain br">
+    <div class="meta mono"><span>FILE 09 / JANITOR AI</span><span>series: demi world</span></div>
+    <div class="title"><span class="mono">Боты</span><h1>Поговорить<br>с персонажами</h1></div>
+    <span class="rb big" aria-hidden="true"></span>
+  </div>
+  <p class="page-lead">Нажми на аватар, чтобы открыть бота. Кнопка «Досье» покажет полную карточку персонажа. Все боты автора — в <a data-profile href="#" target="_blank" rel="noopener">профиле vaileriii на Janitor AI</a>.</p>
+  <div class="bots" id="botsWrap"></div>
+</div>
+
+</main>
+
+<footer>
+  <span class="rb" aria-hidden="true"></span>
+  <span class="mono">Мир деми-хьюманов · by vaileriii · made by AI</span>
+  <a class="mono" data-profile href="#" target="_blank" rel="noopener">vaileriii на Janitor AI ↗</a>
+</footer>
+
+<div class="overlay" id="overlay" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mName" id="modal"></div>
+</div>
+
+<script src="data-ru.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
